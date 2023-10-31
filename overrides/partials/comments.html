@@ -4,22 +4,23 @@
 {% set config_comments = False if config_comments is none else config.extra["comments"] %}
 {% set comments = config_comments if local_comments is none else page.meta['comments'] %}
 {% if comments %}
-    <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
+    <!-- <h2 id="__comments">{{ lang.t("meta.comments") }}</h2> -->
 
-    <script
-        src="https://giscus.app/client.js"
-        data-repo="<username>/<repository>"
-        data-repo-id="..."
-        data-category="..."
-        data-category-id="..."
-        data-mapping="pathname"
+    <script src="https://giscus.app/client.js"
+        data-repo="hyj0824/MyNotes"
+        data-repo-id="R_kgDOKma6kA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOKma6kM4CaiA3"
+        data-mapping="title"
+        data-strict="0"
         data-reactions-enabled="1"
-        data-emit-metadata="1"
-        data-theme="light"
-        data-lang="en"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        data-loading="lazy"
         crossorigin="anonymous"
-        async
-    >
+        async>
     </script>
 
     <!--- generate the script using https://giscus.app/ and replace the text above ! --->

@@ -1,44 +1,83 @@
-site_name: your_site_name # Change this to your site name
-site_description: A cool description of your site
-site_url: https://change_me.io/ # Change this to your site URL
+site_name: hyj0824's OI Blog
+site_url: https://www.hyj.ac.cn/
+dev_addr: '0.0.0.0:8000' #默认值
+
+repo_url: https://github.com/hyj0824/MyNotes
+repo_name: hyj0824/MyNotes
+
+copyright: Copyleft hyj0824
+
+# Custom Homepage Elements
+home_cover_image: assets/img/LLVM_Logo.png # This path starts at your root mkdocs directory.
+home_tagline: hyj0824's Blog
+home_description: |
+  一枚SN的蒟蒻
+
+# Gradient Color
+home_gradient_hsla: hsla(0deg,47%,55%,1) # Default Green: hsla(160deg,47%,55%,1)
+
+# Custom Homepage Button(s)
+home_button1_name: View Graph                  # Comment this parameter out to remove the button.
+home_button1_url: assets/graph.html
+home_button1_theme: md-button md-button--primary # Options: "md-button", "md-button md-button--primary"
+home_button1_icon: image                        # Options: "people", "gear", "image"
+home_button1_blurb: |                            # Short description of this button / section.
+  查看 Obsidian 生成的网络图
+
+home_button2_name: Tags   # Comment this parameter out to remove the button.
+home_button2_url: tags    # This path starts at your root mkdocs directory.
+home_button2_theme: md-button # Options: "md-button", "md-button md-button--primary"
+home_button2_icon: gear       # Options: "people", "gear", "image"
+home_button2_blurb: |         # Short description of this button / section.
+  按照 tags 查找页面
+
+# Homepage Code Execution
+# home_execute_js: | # Javascript to execute when accessing the homepage
+  # console.log("This is an example!");
+
 
 theme:
+    icon:
+        repo: fontawesome/brands/git-alt
     name: 'material'
-    logo: assets/meta/favicons.png
-    favicon: assets/meta/favicons.png
+    logo: assets/meta/favicon.svg
+    favicon: assets/meta/favicon.svg
     custom_dir: overrides
     font:
-        text: Ubuntu
-        code: Ubuntu Mono
-    language: en
+        text: Roboto
+        code: Roboto Mono
+    language: zh
+ 
+
     palette:
+        # Light Mode
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          primary: deep orange
+          accent: indigo
+          toggle:
+            icon: material/toggle-switch-off-outline
+            name: Switch to Dark Mode
 
-    # Light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: teal
-      accent: light blue
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
+        # Dark Mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          primary: deep purple
+          accent: indigo
+          toggle:
+            icon: material/toggle-switch
+            name: Switch to Light Mode
 
-    # Dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: blue
-      accent: indigo
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
     features:
         - navigation.indexes
         - navigation.top
+        - navigation.footer           # Add 'previous' and 'next' buttons in the footer
         - navigation.tabs
         - navigation.tabs.sticky
         - navigation.expand
-        - search.suggest
         - search.highlight
-        
+        - search.suggest              # Display likeliest completion for the last queried word
+
 # Extensions
 markdown_extensions:
   - footnotes
@@ -81,10 +120,10 @@ plugins:
   - search
   - meta-descriptions
   - git-revision-date-localized:
-      type: date
+      type: datetime
       fallback_to_build_date: true
-      locale: en
-      custom_format: "%A %d %B %Y"
+      locale: zh
+      time_zone: Asia/Shanghai
       enable_creation_date: true
   - ezlinks:
         wikilinks: true
@@ -112,18 +151,19 @@ hooks:
   - overrides/hooks/on_env.py
   - overrides/hooks/on_files.py
 extra_javascript:
-  - https://cdn.jsdelivr.net/gh/ObsidianPublisher/assets@main/dist/javascript.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - assets/js/config.js
+  - assets/js/javascript.js
+  - https://polyfill.alicdn.com/v3/polyfill.min.js?features=es6
+  - https://cdn.staticfile.org/mathjax/3.2.2/es5/tex-mml-chtml.min.js
 extra_css:
-    - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
-    - https://cdn.jsdelivr.net/gh/ObsidianPublisher/assets@main/dist/styles.css
+    - assets/css/all.min.css
+    - assets/css/styles.css
     - assets/css/admonition.css
     - assets/css/custom_attributes.css
     - assets/css/customization.css
 extra:
-  SEO: assets/meta/SEO.png
-  comments: false #disable comments globally
+  SEO: assets/meta/favicon.svg
+  comments: true
   generate_graph: true #generate the graph of the site
   attachments: 'assets/img' #path to the folder where the attachments are stored
   no-auto-h1: false #disable the automatic generation of h1 if no h1 is found
@@ -133,5 +173,10 @@ extra:
     pagination_translation: 'posts in' #message to display before the number of posts ; Add your own translation!
     no_page_found: "No pages found!" #message to display when no pages are found ; Add your own translation!
   hooks:
-    strip_comments: true
+    strip_comments: false
     fix_heading: true
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/hyj0824
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:2417179808@qq.com
