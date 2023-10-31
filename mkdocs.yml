@@ -2,8 +2,8 @@ site_name: hyj0824's OI Blog
 site_url: https://www.hyj.ac.cn/
 dev_addr: '0.0.0.0:8000' #默认值
 
-repo_url: https://github.com/hyj0824/MyNotes
-repo_name: hyj0824/MyNotes
+repo_url: https://github.com/hyj0824/MyBlog
+repo_name: hyj0824/MyBlog
 
 copyright: Copyleft hyj0824
 
