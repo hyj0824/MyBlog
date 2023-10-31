@@ -1,0 +1,29 @@
+name: Deploy MkDocs
+
+on:
+  push:
+    branches:
+      - main # the branch where you store the mkdocs source files
+
+permissions:
+  actions: write
+  checks: write
+  contents: write
+  deployments: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3 # this action clones your repository
+
+      - name: Set up Python
+        uses: actions/setup-python@v4 # this action sets up a python environment
+        with:
+          python-version: '3.11'
+
+      - name: Deploy
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master # this action builds and deploys your mkdocs site to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this is a token provided by GitHub Actions
