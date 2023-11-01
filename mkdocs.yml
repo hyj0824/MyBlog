@@ -17,12 +17,12 @@ home_description: |
 home_gradient_hsla: hsla(0deg,47%,55%,1) # Default Green: hsla(160deg,47%,55%,1)
 
 # Custom Homepage Button(s)
-home_button1_name: View Graph                  # Comment this parameter out to remove the button.
-home_button1_url: assets/graph.html
+home_button1_name: View All                 # Comment this parameter out to remove the button.
+home_button1_url: posts_list
 home_button1_theme: md-button md-button--primary # Options: "md-button", "md-button md-button--primary"
 home_button1_icon: image                        # Options: "people", "gear", "image"
 home_button1_blurb: |                            # Short description of this button / section.
-  查看 Obsidian 生成的网络图
+  查看文章列表
 
 home_button2_name: Tags   # Comment this parameter out to remove the button.
 home_button2_url: tags    # This path starts at your root mkdocs directory.
@@ -164,7 +164,7 @@ extra_css:
 extra:
   SEO: assets/meta/favicon.svg
   comments: true
-  generate_graph: true #generate the graph of the site
+  generate_graph: false #generate the graph of the site
   attachments: 'assets/img' #path to the folder where the attachments are stored
   no-auto-h1: false #disable the automatic generation of h1 if no h1 is found
   blog_list:
@@ -174,7 +174,7 @@ extra:
     no_page_found: "No pages found!" #message to display when no pages are found ; Add your own translation!
   hooks:
     strip_comments: false
-    fix_heading: true
+    fix_heading: false
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/hyj0824
