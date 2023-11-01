@@ -4,7 +4,7 @@ dg-home: true
 dg-publish: true
 ---
 
-![[LLVM_Logo.png]]
+![[head.webp]]
 
 
 > [!note] Hello World
