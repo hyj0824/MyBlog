@@ -11,6 +11,6 @@ inputs:
     src: ./site  # 部署项目的目录路径
     index: index.html
     websitePath: ./
-  region: ap-guangzhou
-  bucketName: my-bucket
-  protocol: http
+  region: ap-shanghai
+  bucketName: bucket-myblog
+  protocol: https
