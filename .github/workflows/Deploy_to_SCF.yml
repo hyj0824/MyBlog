@@ -1,11 +1,11 @@
-name: Deploy to serverless (scf)
+name: Deploy to Tencent Serverless (scf)
 on:
   push:
     branches:
       - main
 jobs:
   deploy:
-    name: deploy serverless scf
+    name: Deploy to Tencent Serverless
     runs-on: ubuntu-latest
     steps:
       - name: clone repository
@@ -20,7 +20,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Generate static files
-        run: mkdocs build -d src
+        run: mkdocs build
 
       - name: Deploy to serverless
         uses: woodyyan/tencent-serverless-action@main

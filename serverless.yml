@@ -1,0 +1,16 @@
+# serverless.yml
+
+component: website # (必填) 引用 component 的名称，当前用到的是 tencent-website 组件
+name: myblog # (必填) 该 website 组件创建的实例名称
+
+app: website-myblog # (可选) 该 website 应用名称
+stage: dev # (可选) 用于区分环境信息，默认值是 dev
+
+inputs:
+  src:
+    src: ./site  # 部署项目的目录路径
+    index: index.html
+    websitePath: ./
+  region: ap-guangzhou
+  bucketName: my-bucket
+  protocol: http
