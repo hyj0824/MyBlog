@@ -1,5 +1,11 @@
 name: Repository maintenance
 
+permissions:
+  actions: write
+  checks: write
+  contents: write
+  deployments: write
+
 on:
   workflow_dispatch:
   schedule:
@@ -11,4 +17,4 @@ jobs:
       CLEAN: true
       DRY_RUN: false
     secrets:
-      GH_PAT: ${{ secrets.GH_TOKEN }}
+      GH_PAT: ${{ secrets.GITHUB_TOKEN }}
