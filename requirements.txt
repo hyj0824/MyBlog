@@ -16,4 +16,4 @@ mkdocs-minify-plugin==0.7.1
 mkdocs-exclude==1.0.2
 jieba==0.42.1
 obsidiantools==0.10.0
-pyvis==0.3.1
+pyvis==0.3.2
