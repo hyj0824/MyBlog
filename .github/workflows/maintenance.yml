@@ -1,6 +1,11 @@
 name: Repository maintenance
 
-permissions: write-all
+permissions:
+  actions: write
+  checks: write
+  contents: write
+  deployments: write
+  pull-requests: write
 
 on:
   workflow_dispatch:
