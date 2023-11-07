@@ -1,12 +1,4 @@
 name: Get latest release from template
-
-permissions:
-  actions: write
-  checks: write
-  contents: write
-  deployments: write
-  pull-requests: write
-
 on:
   workflow_dispatch:
   schedule:
@@ -17,4 +9,4 @@ jobs:
     with:
       AUTO_MERGE: false
     secrets:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
