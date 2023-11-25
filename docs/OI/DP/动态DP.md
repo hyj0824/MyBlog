@@ -34,11 +34,11 @@ $C_{i,j} = (A_{i, 1}\otimes B_{1,j}) \oplus (A_{i,2}\otimes B_{2,j})\oplus \cdot
 
 $$
 \begin{aligned}
-  ((AB)C)_{i,j} &= \bigoplus_{k=1}^{p}(AB)_{i,k}\otimes C_{k,j}\\
-  &= \bigoplus_{k=1}^{p}\left( \left(\bigoplus_{t=1}^{q} A_{i,t}\otimes B_{t,k}\right) \otimes C_{k,j}\right)\\
+((AB)C){i,j} &= \bigoplus^{p}(AB){i,k}\otimes C \\
+&= \bigoplus_{k=1}^{p}\left( \left(\bigoplus_{t=1}^{q} A_{i,t}\otimes B_{t,k}\right) \otimes C_{k,j}\right) \\
 
-  (A(BC))_{i,j} &= \bigoplus_{t=1}^{q}A_{i,t}\otimes (BC)_{t,j}\\
-  &= \bigoplus_{t=1}^{q} \left(A_{i,t}\otimes \left(\bigoplus_{k=1}^{p} B_{t,k} \otimes C_{k,j}\right)\right)
+(A(BC)){i,j} &= \bigoplus^{q}A_{i,t}\otimes (BC){t,j} \\
+&= \bigoplus^{q} \left(A_{i,t}\otimes \left(\bigoplus_{k=1}^{p} B_{t,k} \otimes C_{k,j}\right)\right) \\
 \end{aligned}
 $$
 

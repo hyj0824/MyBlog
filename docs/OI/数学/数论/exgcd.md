@@ -142,7 +142,12 @@ $\begin{cases} x'=nx=n*(x_0+k*b/gcd) \\ y'=ny=n*(y_0-k*a/gcd) \end{cases}$
 
 但是，如果你直接给上一节算出的最小整数解乘n，其实不一定是该方程的最小整数解：
 
-$\begin{cases}x'=nx_0+kn*b/gcd=nx_0+q*b/gcd \\ y'=ny_0-kn*a/gcd=ny_0-q*a/gcd \end{cases}$
+$$
+\begin{cases}
+x'=nx_0+kn*b/gcd \rightarrow nx_0+q*b/gcd \\ 
+y'=ny_0-kn*a/gcd \rightarrow ny_0-q*a/gcd  \\
+\end{cases}
+$$
 
 在构造$x'$和$y'$时，我们只要求$kn$是整数，故$k$实际上可以取任意实数，可以一并视为一个倍数$q$。
 

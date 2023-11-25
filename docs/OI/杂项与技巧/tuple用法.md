@@ -1,6 +1,6 @@
 ---
 tags:
-  - 技巧
+  - 杂项
 date: 2023-10-23
 dg-publish: true
 dg-permalink: tuple用法
