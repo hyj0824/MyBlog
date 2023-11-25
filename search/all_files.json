@@ -1,0 +1,572 @@
+[
+    {
+        "src_uri": "index.md",
+        "dest_uri": "./",
+        "name": "index",
+        "url": "./"
+    },
+    {
+        "src_uri": "posts_list.md",
+        "dest_uri": "posts_list/",
+        "name": "posts_list",
+        "url": "posts_list/"
+    },
+    {
+        "src_uri": "tags.md",
+        "dest_uri": "tags/",
+        "name": "tags",
+        "url": "tags/"
+    },
+    {
+        "src_uri": "C++/move\u8bed\u4e49.md",
+        "dest_uri": "C%2B%2B/move%E8%AF%AD%E4%B9%89/",
+        "name": "move\u8bed\u4e49",
+        "url": "C%2B%2B/move%E8%AF%AD%E4%B9%89/"
+    },
+    {
+        "src_uri": "OI/GoodbyeOI.md",
+        "dest_uri": "OI/GoodbyeOI/",
+        "name": "GoodbyeOI",
+        "url": "OI/GoodbyeOI/"
+    },
+    {
+        "src_uri": "OI/\u677f\u5b50.md",
+        "dest_uri": "OI/%E6%9D%BF%E5%AD%90/",
+        "name": "\u677f\u5b50",
+        "url": "OI/%E6%9D%BF%E5%AD%90/"
+    },
+    {
+        "src_uri": "OI/DP/\u52a8\u6001DP.md",
+        "dest_uri": "OI/DP/%E5%8A%A8%E6%80%81DP/",
+        "name": "\u52a8\u6001DP",
+        "url": "OI/DP/%E5%8A%A8%E6%80%81DP/"
+    },
+    {
+        "src_uri": "OI/DP/\u6811\u5f62DP.md",
+        "dest_uri": "OI/DP/%E6%A0%91%E5%BD%A2DP/",
+        "name": "\u6811\u5f62DP",
+        "url": "OI/DP/%E6%A0%91%E5%BD%A2DP/"
+    },
+    {
+        "src_uri": "OI/\u505a\u9898\u8bb0\u5f55/01\u6392\u5e8f\u95ee\u9898.md",
+        "dest_uri": "OI/%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/01%E6%8E%92%E5%BA%8F%E9%97%AE%E9%A2%98/",
+        "name": "01\u6392\u5e8f\u95ee\u9898",
+        "url": "OI/%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/01%E6%8E%92%E5%BA%8F%E9%97%AE%E9%A2%98/"
+    },
+    {
+        "src_uri": "OI/\u505a\u9898\u8bb0\u5f55/ABC293E.md",
+        "dest_uri": "OI/%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/ABC293E/",
+        "name": "ABC293E",
+        "url": "OI/%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/ABC293E/"
+    },
+    {
+        "src_uri": "OI/\u505a\u9898\u8bb0\u5f55/AGC031D.md",
+        "dest_uri": "OI/%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/AGC031D/",
+        "name": "AGC031D",
+        "url": "OI/%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/AGC031D/"
+    },
+    {
+        "src_uri": "OI/\u505a\u9898\u8bb0\u5f55/P3176.md",
+        "dest_uri": "OI/%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/P3176/",
+        "name": "P3176",
+        "url": "OI/%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/P3176/"
+    },
+    {
+        "src_uri": "OI/\u505a\u9898\u8bb0\u5f55/P3702.md",
+        "dest_uri": "OI/%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/P3702/",
+        "name": "P3702",
+        "url": "OI/%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/P3702/"
+    },
+    {
+        "src_uri": "OI/\u56fe\u8bba/2-sat.md",
+        "dest_uri": "OI/%E5%9B%BE%E8%AE%BA/2-sat/",
+        "name": "2-sat",
+        "url": "OI/%E5%9B%BE%E8%AE%BA/2-sat/"
+    },
+    {
+        "src_uri": "OI/\u56fe\u8bba/LGV\u5f15\u7406.md",
+        "dest_uri": "OI/%E5%9B%BE%E8%AE%BA/LGV%E5%BC%95%E7%90%86/",
+        "name": "LGV\u5f15\u7406",
+        "url": "OI/%E5%9B%BE%E8%AE%BA/LGV%E5%BC%95%E7%90%86/"
+    },
+    {
+        "src_uri": "OI/\u5b57\u7b26\u4e32/StringHash.md",
+        "dest_uri": "OI/%E5%AD%97%E7%AC%A6%E4%B8%B2/StringHash/",
+        "name": "StringHash",
+        "url": "OI/%E5%AD%97%E7%AC%A6%E4%B8%B2/StringHash/"
+    },
+    {
+        "src_uri": "OI/\u6570\u5b66/\u5207\u6bd4\u96ea\u592b\u8ddd\u79bb\u4e0e\u66fc\u54c8\u987f\u8ddd\u79bb.md",
+        "dest_uri": "OI/%E6%95%B0%E5%AD%A6/%E5%88%87%E6%AF%94%E9%9B%AA%E5%A4%AB%E8%B7%9D%E7%A6%BB%E4%B8%8E%E6%9B%BC%E5%93%88%E9%A1%BF%E8%B7%9D%E7%A6%BB/",
+        "name": "\u5207\u6bd4\u96ea\u592b\u8ddd\u79bb\u4e0e\u66fc\u54c8\u987f\u8ddd\u79bb",
+        "url": "OI/%E6%95%B0%E5%AD%A6/%E5%88%87%E6%AF%94%E9%9B%AA%E5%A4%AB%E8%B7%9D%E7%A6%BB%E4%B8%8E%E6%9B%BC%E5%93%88%E9%A1%BF%E8%B7%9D%E7%A6%BB/"
+    },
+    {
+        "src_uri": "OI/\u6570\u5b66/\u6570\u8bba/exgcd.md",
+        "dest_uri": "OI/%E6%95%B0%E5%AD%A6/%E6%95%B0%E8%AE%BA/exgcd/",
+        "name": "exgcd",
+        "url": "OI/%E6%95%B0%E5%AD%A6/%E6%95%B0%E8%AE%BA/exgcd/"
+    },
+    {
+        "src_uri": "OI/\u6570\u5b66/\u6570\u8bba/\u6b27\u62c9\u51fd\u6570.md",
+        "dest_uri": "OI/%E6%95%B0%E5%AD%A6/%E6%95%B0%E8%AE%BA/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0/",
+        "name": "\u6b27\u62c9\u51fd\u6570",
+        "url": "OI/%E6%95%B0%E5%AD%A6/%E6%95%B0%E8%AE%BA/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0/"
+    },
+    {
+        "src_uri": "OI/\u6570\u5b66/\u6570\u8bba/\u9006\u5143.md",
+        "dest_uri": "OI/%E6%95%B0%E5%AD%A6/%E6%95%B0%E8%AE%BA/%E9%80%86%E5%85%83/",
+        "name": "\u9006\u5143",
+        "url": "OI/%E6%95%B0%E5%AD%A6/%E6%95%B0%E8%AE%BA/%E9%80%86%E5%85%83/"
+    },
+    {
+        "src_uri": "OI/\u6570\u5b66/\u7ebf\u6027\u4ee3\u6570/\u7ebf\u6027\u57fa.md",
+        "dest_uri": "OI/%E6%95%B0%E5%AD%A6/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E7%BA%BF%E6%80%A7%E5%9F%BA/",
+        "name": "\u7ebf\u6027\u57fa",
+        "url": "OI/%E6%95%B0%E5%AD%A6/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E7%BA%BF%E6%80%A7%E5%9F%BA/"
+    },
+    {
+        "src_uri": "OI/\u6570\u5b66/\u7ebf\u6027\u4ee3\u6570/\u901f\u901a\u77e9\u9635.md",
+        "dest_uri": "OI/%E6%95%B0%E5%AD%A6/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E9%80%9F%E9%80%9A%E7%9F%A9%E9%98%B5/",
+        "name": "\u901f\u901a\u77e9\u9635",
+        "url": "OI/%E6%95%B0%E5%AD%A6/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E9%80%9F%E9%80%9A%E7%9F%A9%E9%98%B5/"
+    },
+    {
+        "src_uri": "OI/\u6570\u5b66/\u7ebf\u6027\u4ee3\u6570/\u9ad8\u65af\u6d88\u5143.md",
+        "dest_uri": "OI/%E6%95%B0%E5%AD%A6/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/",
+        "name": "\u9ad8\u65af\u6d88\u5143",
+        "url": "OI/%E6%95%B0%E5%AD%A6/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/"
+    },
+    {
+        "src_uri": "OI/\u6570\u5b66/\u7ec4\u5408\u6570\u5b66/\u5bb9\u65a5\u539f\u7406\u548c\u4e8c\u9879\u5f0f\u53cd\u6f14.md",
+        "dest_uri": "OI/%E6%95%B0%E5%AD%A6/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E5%AE%B9%E6%96%A5%E5%8E%9F%E7%90%86%E5%92%8C%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%8F%8D%E6%BC%94/",
+        "name": "\u5bb9\u65a5\u539f\u7406\u548c\u4e8c\u9879\u5f0f\u53cd\u6f14",
+        "url": "OI/%E6%95%B0%E5%AD%A6/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E5%AE%B9%E6%96%A5%E5%8E%9F%E7%90%86%E5%92%8C%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%8F%8D%E6%BC%94/"
+    },
+    {
+        "src_uri": "OI/\u6570\u5b66/\u7ec4\u5408\u6570\u5b66/\u9519\u6392\u95ee\u9898.md",
+        "dest_uri": "OI/%E6%95%B0%E5%AD%A6/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E9%94%99%E6%8E%92%E9%97%AE%E9%A2%98/",
+        "name": "\u9519\u6392\u95ee\u9898",
+        "url": "OI/%E6%95%B0%E5%AD%A6/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E9%94%99%E6%8E%92%E9%97%AE%E9%A2%98/"
+    },
+    {
+        "src_uri": "OI/\u6570\u636e\u7ed3\u6784/\u6811\u72b6\u6570\u7ec4.md",
+        "dest_uri": "OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/",
+        "name": "\u6811\u72b6\u6570\u7ec4",
+        "url": "OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"
+    },
+    {
+        "src_uri": "OI/\u6570\u636e\u7ed3\u6784/\u6839\u53f7\u7b97\u6cd5.md",
+        "dest_uri": "OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%B9%E5%8F%B7%E7%AE%97%E6%B3%95/",
+        "name": "\u6839\u53f7\u7b97\u6cd5",
+        "url": "OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%B9%E5%8F%B7%E7%AE%97%E6%B3%95/"
+    },
+    {
+        "src_uri": "OI/\u6742\u9879\u4e0e\u6280\u5de7/DFS\u5361\u65f6.md",
+        "dest_uri": "OI/%E6%9D%82%E9%A1%B9%E4%B8%8E%E6%8A%80%E5%B7%A7/DFS%E5%8D%A1%E6%97%B6/",
+        "name": "DFS\u5361\u65f6",
+        "url": "OI/%E6%9D%82%E9%A1%B9%E4%B8%8E%E6%8A%80%E5%B7%A7/DFS%E5%8D%A1%E6%97%B6/"
+    },
+    {
+        "src_uri": "OI/\u6742\u9879\u4e0e\u6280\u5de7/min-max\u5206\u914d\u5f8b.md",
+        "dest_uri": "OI/%E6%9D%82%E9%A1%B9%E4%B8%8E%E6%8A%80%E5%B7%A7/min-max%E5%88%86%E9%85%8D%E5%BE%8B/",
+        "name": "min-max\u5206\u914d\u5f8b",
+        "url": "OI/%E6%9D%82%E9%A1%B9%E4%B8%8E%E6%8A%80%E5%B7%A7/min-max%E5%88%86%E9%85%8D%E5%BE%8B/"
+    },
+    {
+        "src_uri": "OI/\u6742\u9879\u4e0e\u6280\u5de7/tuple\u7528\u6cd5.md",
+        "dest_uri": "OI/%E6%9D%82%E9%A1%B9%E4%B8%8E%E6%8A%80%E5%B7%A7/tuple%E7%94%A8%E6%B3%95/",
+        "name": "tuple\u7528\u6cd5",
+        "url": "OI/%E6%9D%82%E9%A1%B9%E4%B8%8E%E6%8A%80%E5%B7%A7/tuple%E7%94%A8%E6%B3%95/"
+    },
+    {
+        "src_uri": "OI/\u6742\u9879\u4e0e\u6280\u5de7/\u4e2d\u4f4d\u6570\u76f8\u5173.md",
+        "dest_uri": "OI/%E6%9D%82%E9%A1%B9%E4%B8%8E%E6%8A%80%E5%B7%A7/%E4%B8%AD%E4%BD%8D%E6%95%B0%E7%9B%B8%E5%85%B3/",
+        "name": "\u4e2d\u4f4d\u6570\u76f8\u5173",
+        "url": "OI/%E6%9D%82%E9%A1%B9%E4%B8%8E%E6%8A%80%E5%B7%A7/%E4%B8%AD%E4%BD%8D%E6%95%B0%E7%9B%B8%E5%85%B3/"
+    },
+    {
+        "src_uri": "OI/\u6742\u9879\u4e0e\u6280\u5de7/\u54c8\u5e0c.md",
+        "dest_uri": "OI/%E6%9D%82%E9%A1%B9%E4%B8%8E%E6%8A%80%E5%B7%A7/%E5%93%88%E5%B8%8C/",
+        "name": "\u54c8\u5e0c",
+        "url": "OI/%E6%9D%82%E9%A1%B9%E4%B8%8E%E6%8A%80%E5%B7%A7/%E5%93%88%E5%B8%8C/"
+    },
+    {
+        "src_uri": "OI/\u6742\u9879\u4e0e\u6280\u5de7/\u5b50\u96c6\u679a\u4e3e.md",
+        "dest_uri": "OI/%E6%9D%82%E9%A1%B9%E4%B8%8E%E6%8A%80%E5%B7%A7/%E5%AD%90%E9%9B%86%E6%9E%9A%E4%B8%BE/",
+        "name": "\u5b50\u96c6\u679a\u4e3e",
+        "url": "OI/%E6%9D%82%E9%A1%B9%E4%B8%8E%E6%8A%80%E5%B7%A7/%E5%AD%90%E9%9B%86%E6%9E%9A%E4%B8%BE/"
+    },
+    {
+        "src_uri": "OI/\u6742\u9879\u4e0e\u6280\u5de7/\u79bb\u6563\u5316.md",
+        "dest_uri": "OI/%E6%9D%82%E9%A1%B9%E4%B8%8E%E6%8A%80%E5%B7%A7/%E7%A6%BB%E6%95%A3%E5%8C%96/",
+        "name": "\u79bb\u6563\u5316",
+        "url": "OI/%E6%9D%82%E9%A1%B9%E4%B8%8E%E6%8A%80%E5%B7%A7/%E7%A6%BB%E6%95%A3%E5%8C%96/"
+    },
+    {
+        "src_uri": "assets/css/.push",
+        "dest_uri": "assets/css/.push",
+        "name": ".push",
+        "url": "assets/css/.push"
+    },
+    {
+        "src_uri": "assets/css/admonition.css",
+        "dest_uri": "assets/css/admonition.css",
+        "name": "admonition",
+        "url": "assets/css/admonition.css"
+    },
+    {
+        "src_uri": "assets/css/all.min.css",
+        "dest_uri": "assets/css/all.min.css",
+        "name": "all.min",
+        "url": "assets/css/all.min.css"
+    },
+    {
+        "src_uri": "assets/css/custom_attributes.css",
+        "dest_uri": "assets/css/custom_attributes.css",
+        "name": "custom_attributes",
+        "url": "assets/css/custom_attributes.css"
+    },
+    {
+        "src_uri": "assets/css/customization.css",
+        "dest_uri": "assets/css/customization.css",
+        "name": "customization",
+        "url": "assets/css/customization.css"
+    },
+    {
+        "src_uri": "assets/css/styles.css",
+        "dest_uri": "assets/css/styles.css",
+        "name": "styles",
+        "url": "assets/css/styles.css"
+    },
+    {
+        "src_uri": "assets/img/.push",
+        "dest_uri": "assets/img/.push",
+        "name": ".push",
+        "url": "assets/img/.push"
+    },
+    {
+        "src_uri": "assets/js/.push",
+        "dest_uri": "assets/js/.push",
+        "name": ".push",
+        "url": "assets/js/.push"
+    },
+    {
+        "src_uri": "assets/js/config.js",
+        "dest_uri": "assets/js/config.js",
+        "name": "config",
+        "url": "assets/js/config.js"
+    },
+    {
+        "src_uri": "assets/js/javascript.js",
+        "dest_uri": "assets/js/javascript.js",
+        "name": "javascript",
+        "url": "assets/js/javascript.js"
+    },
+    {
+        "src_uri": "assets/meta/.push",
+        "dest_uri": "assets/meta/.push",
+        "name": ".push",
+        "url": "assets/meta/.push"
+    },
+    {
+        "src_uri": "assets/meta/favicon.svg",
+        "dest_uri": "assets/meta/favicon.svg",
+        "name": "favicon",
+        "url": "assets/meta/favicon.svg"
+    },
+    {
+        "src_uri": "assets/meta/head.webp",
+        "dest_uri": "assets/meta/head.webp",
+        "name": "head",
+        "url": "assets/meta/head.webp"
+    },
+    {
+        "src_uri": "\u3010\u9644\u4ef6\u3011/Pasted image 20230629192537.png",
+        "dest_uri": "%E3%80%90%E9%99%84%E4%BB%B6%E3%80%91/Pasted%20image%2020230629192537.png",
+        "name": "Pasted image 20230629192537",
+        "url": "%E3%80%90%E9%99%84%E4%BB%B6%E3%80%91/Pasted%20image%2020230629192537.png"
+    },
+    {
+        "src_uri": "\u3010\u9644\u4ef6\u3011/Pasted image 20230629195206.png",
+        "dest_uri": "%E3%80%90%E9%99%84%E4%BB%B6%E3%80%91/Pasted%20image%2020230629195206.png",
+        "name": "Pasted image 20230629195206",
+        "url": "%E3%80%90%E9%99%84%E4%BB%B6%E3%80%91/Pasted%20image%2020230629195206.png"
+    },
+    {
+        "src_uri": "\u3010\u9644\u4ef6\u3011/Pasted image 20230629200443.png",
+        "dest_uri": "%E3%80%90%E9%99%84%E4%BB%B6%E3%80%91/Pasted%20image%2020230629200443.png",
+        "name": "Pasted image 20230629200443",
+        "url": "%E3%80%90%E9%99%84%E4%BB%B6%E3%80%91/Pasted%20image%2020230629200443.png"
+    },
+    {
+        "src_uri": "\u3010\u9644\u4ef6\u3011/head.webp",
+        "dest_uri": "%E3%80%90%E9%99%84%E4%BB%B6%E3%80%91/head.webp",
+        "name": "head",
+        "url": "%E3%80%90%E9%99%84%E4%BB%B6%E3%80%91/head.webp"
+    },
+    {
+        "src_uri": "\u6742\u9879/git\u4fee\u6539\u4ee3\u7406.md",
+        "dest_uri": "%E6%9D%82%E9%A1%B9/git%E4%BF%AE%E6%94%B9%E4%BB%A3%E7%90%86/",
+        "name": "git\u4fee\u6539\u4ee3\u7406",
+        "url": "%E6%9D%82%E9%A1%B9/git%E4%BF%AE%E6%94%B9%E4%BB%A3%E7%90%86/"
+    },
+    {
+        "src_uri": "assets/images/favicon.png",
+        "dest_uri": "assets/images/favicon.png",
+        "name": "favicon",
+        "url": "assets/images/favicon.png"
+    },
+    {
+        "src_uri": "assets/javascripts/bundle.6c14ae12.min.js",
+        "dest_uri": "assets/javascripts/bundle.6c14ae12.min.js",
+        "name": "bundle.6c14ae12.min",
+        "url": "assets/javascripts/bundle.6c14ae12.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/bundle.6c14ae12.min.js.map",
+        "dest_uri": "assets/javascripts/bundle.6c14ae12.min.js.map",
+        "name": "bundle.6c14ae12.min.js",
+        "url": "assets/javascripts/bundle.6c14ae12.min.js.map"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.ar.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.ar.min.js",
+        "name": "lunr.ar.min",
+        "url": "assets/javascripts/lunr/min/lunr.ar.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.da.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.da.min.js",
+        "name": "lunr.da.min",
+        "url": "assets/javascripts/lunr/min/lunr.da.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.de.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.de.min.js",
+        "name": "lunr.de.min",
+        "url": "assets/javascripts/lunr/min/lunr.de.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.du.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.du.min.js",
+        "name": "lunr.du.min",
+        "url": "assets/javascripts/lunr/min/lunr.du.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.el.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.el.min.js",
+        "name": "lunr.el.min",
+        "url": "assets/javascripts/lunr/min/lunr.el.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.es.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.es.min.js",
+        "name": "lunr.es.min",
+        "url": "assets/javascripts/lunr/min/lunr.es.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.fi.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.fi.min.js",
+        "name": "lunr.fi.min",
+        "url": "assets/javascripts/lunr/min/lunr.fi.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.fr.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.fr.min.js",
+        "name": "lunr.fr.min",
+        "url": "assets/javascripts/lunr/min/lunr.fr.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.he.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.he.min.js",
+        "name": "lunr.he.min",
+        "url": "assets/javascripts/lunr/min/lunr.he.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.hi.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.hi.min.js",
+        "name": "lunr.hi.min",
+        "url": "assets/javascripts/lunr/min/lunr.hi.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.hu.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.hu.min.js",
+        "name": "lunr.hu.min",
+        "url": "assets/javascripts/lunr/min/lunr.hu.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.hy.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.hy.min.js",
+        "name": "lunr.hy.min",
+        "url": "assets/javascripts/lunr/min/lunr.hy.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.it.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.it.min.js",
+        "name": "lunr.it.min",
+        "url": "assets/javascripts/lunr/min/lunr.it.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.ja.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.ja.min.js",
+        "name": "lunr.ja.min",
+        "url": "assets/javascripts/lunr/min/lunr.ja.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.jp.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.jp.min.js",
+        "name": "lunr.jp.min",
+        "url": "assets/javascripts/lunr/min/lunr.jp.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.kn.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.kn.min.js",
+        "name": "lunr.kn.min",
+        "url": "assets/javascripts/lunr/min/lunr.kn.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.ko.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.ko.min.js",
+        "name": "lunr.ko.min",
+        "url": "assets/javascripts/lunr/min/lunr.ko.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.multi.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.multi.min.js",
+        "name": "lunr.multi.min",
+        "url": "assets/javascripts/lunr/min/lunr.multi.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.nl.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.nl.min.js",
+        "name": "lunr.nl.min",
+        "url": "assets/javascripts/lunr/min/lunr.nl.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.no.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.no.min.js",
+        "name": "lunr.no.min",
+        "url": "assets/javascripts/lunr/min/lunr.no.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.pt.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.pt.min.js",
+        "name": "lunr.pt.min",
+        "url": "assets/javascripts/lunr/min/lunr.pt.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.ro.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.ro.min.js",
+        "name": "lunr.ro.min",
+        "url": "assets/javascripts/lunr/min/lunr.ro.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.ru.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.ru.min.js",
+        "name": "lunr.ru.min",
+        "url": "assets/javascripts/lunr/min/lunr.ru.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.sa.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.sa.min.js",
+        "name": "lunr.sa.min",
+        "url": "assets/javascripts/lunr/min/lunr.sa.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.stemmer.support.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.stemmer.support.min.js",
+        "name": "lunr.stemmer.support.min",
+        "url": "assets/javascripts/lunr/min/lunr.stemmer.support.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.sv.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.sv.min.js",
+        "name": "lunr.sv.min",
+        "url": "assets/javascripts/lunr/min/lunr.sv.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.ta.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.ta.min.js",
+        "name": "lunr.ta.min",
+        "url": "assets/javascripts/lunr/min/lunr.ta.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.te.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.te.min.js",
+        "name": "lunr.te.min",
+        "url": "assets/javascripts/lunr/min/lunr.te.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.th.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.th.min.js",
+        "name": "lunr.th.min",
+        "url": "assets/javascripts/lunr/min/lunr.th.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.tr.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.tr.min.js",
+        "name": "lunr.tr.min",
+        "url": "assets/javascripts/lunr/min/lunr.tr.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.vi.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.vi.min.js",
+        "name": "lunr.vi.min",
+        "url": "assets/javascripts/lunr/min/lunr.vi.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.zh.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.zh.min.js",
+        "name": "lunr.zh.min",
+        "url": "assets/javascripts/lunr/min/lunr.zh.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/tinyseg.js",
+        "dest_uri": "assets/javascripts/lunr/tinyseg.js",
+        "name": "tinyseg",
+        "url": "assets/javascripts/lunr/tinyseg.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/wordcut.js",
+        "dest_uri": "assets/javascripts/lunr/wordcut.js",
+        "name": "wordcut",
+        "url": "assets/javascripts/lunr/wordcut.js"
+    },
+    {
+        "src_uri": "assets/javascripts/workers/search.f886a092.min.js",
+        "dest_uri": "assets/javascripts/workers/search.f886a092.min.js",
+        "name": "search.f886a092.min",
+        "url": "assets/javascripts/workers/search.f886a092.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/workers/search.f886a092.min.js.map",
+        "dest_uri": "assets/javascripts/workers/search.f886a092.min.js.map",
+        "name": "search.f886a092.min.js",
+        "url": "assets/javascripts/workers/search.f886a092.min.js.map"
+    },
+    {
+        "src_uri": "assets/stylesheets/main.fad675c6.min.css",
+        "dest_uri": "assets/stylesheets/main.fad675c6.min.css",
+        "name": "main.fad675c6.min",
+        "url": "assets/stylesheets/main.fad675c6.min.css"
+    },
+    {
+        "src_uri": "assets/stylesheets/main.fad675c6.min.css.map",
+        "dest_uri": "assets/stylesheets/main.fad675c6.min.css.map",
+        "name": "main.fad675c6.min.css",
+        "url": "assets/stylesheets/main.fad675c6.min.css.map"
+    },
+    {
+        "src_uri": "assets/stylesheets/palette.356b1318.min.css",
+        "dest_uri": "assets/stylesheets/palette.356b1318.min.css",
+        "name": "palette.356b1318.min",
+        "url": "assets/stylesheets/palette.356b1318.min.css"
+    },
+    {
+        "src_uri": "assets/stylesheets/palette.356b1318.min.css.map",
+        "dest_uri": "assets/stylesheets/palette.356b1318.min.css.map",
+        "name": "palette.356b1318.min.css",
+        "url": "assets/stylesheets/palette.356b1318.min.css.map"
+    }
+]
