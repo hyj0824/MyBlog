@@ -1,6 +1,6 @@
 ---
 tags:
-  - 备忘
+  - 杂项
 date: 2023-08-29
 dg-publish: true
 dg-permalink: git修改代理
