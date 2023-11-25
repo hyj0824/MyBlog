@@ -8,7 +8,7 @@ repo_name: hyj0824/MyBlog
 copyright: Copyleft hyj0824
 
 # Custom Homepage Elements
-home_cover_image: assets/img/head.webp # This path starts at your root mkdocs directory.
+home_cover_image: assets/meta/head.webp # This path starts at your root mkdocs directory.
 home_tagline: hyj0824's Blog
 home_description: |
   一枚SN的蒟蒻
@@ -47,7 +47,7 @@ theme:
         text: Roboto
         code: Roboto Mono
     language: zh
- 
+
 
     palette:
         # Light Mode
