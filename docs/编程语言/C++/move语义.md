@@ -19,7 +19,13 @@ C++11 后，为了实现只拷贝栈上数据，不拷贝堆上数据（**浅拷
 
 于是 `std::move(a)` 闪亮登场。其作用仅仅是类型转换，将左值变量 `a` 转换成右值（xvalue）。**请注意**这个函数对 `a` 内部没有任何影响。相当于是给 `a` 打了 tag 表示 `a` 现在是右值，可以移动了，但并不会进一步操作。操作是接受右值的函数内部进行的。
 
+总结：
+
+- xvalue可以被移动构造函数直接接受；
+- 移动构造lvalue，那么需要先使用 `std::move` 将lvalue变成xvalue，从而不调用拷贝，而调用移动；
+- prvalue被接受的时候，生成了一个临时变量xvalue，函数内操作是对这个xvalue进行（这个无所谓，重要的是上面）
 
 ## references
 
 [什么是move？理解C++ Value categories，move， move in Rust - 知乎](https://zhuanlan.zhihu.com/p/374392832)
+
