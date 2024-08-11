@@ -1,11 +1,3 @@
-<!-- Giscus -->
-{% set local_comments = "comments" | value_in_frontmatter(page.meta) %}
-{% set config_comments = "comments" | value_in_frontmatter(config.extra) %}
-{% set config_comments = False if config_comments is none else config.extra["comments"] %}
-{% set comments = config_comments if local_comments is none else page.meta['comments'] %}
-{% if comments %}
-    <!-- <h2 id="__comments">{{ lang.t("meta.comments") }}</h2> -->
-
     <script src="https://giscus.app/client.js"
         data-repo="hyj0824/MyBlog"
         data-repo-id="R_kgDOKnVefQ"
@@ -53,4 +45,3 @@
             })
         })
     </script>
-{% endif %}

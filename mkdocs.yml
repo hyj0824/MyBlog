@@ -2,39 +2,11 @@ site_name: hyj0824's OI Blog
 site_url: https://www.hyj.ac.cn/
 dev_addr: '0.0.0.0:8000' #默认值
 
+# 右上角项目地址
 repo_url: https://github.com/hyj0824/MyBlog
 repo_name: hyj0824/MyBlog
 
 copyright: Copyleft hyj0824
-
-# Custom Homepage Elements
-home_cover_image: assets/meta/head.webp # This path starts at your root mkdocs directory.
-home_tagline: hyj0824's Blog
-home_description: |
-  一枚SN的蒟蒻
-
-# Gradient Color
-home_gradient_hsla: hsla(0deg,47%,55%,1) # Default Green: hsla(160deg,47%,55%,1)
-
-# Custom Homepage Button(s)
-home_button1_name: View All                 # Comment this parameter out to remove the button.
-home_button1_url: posts_list
-home_button1_theme: md-button md-button--primary # Options: "md-button", "md-button md-button--primary"
-home_button1_icon: image                        # Options: "people", "gear", "image"
-home_button1_blurb: |                            # Short description of this button / section.
-  查看文章列表
-
-home_button2_name: Tags   # Comment this parameter out to remove the button.
-home_button2_url: tags    # This path starts at your root mkdocs directory.
-home_button2_theme: md-button # Options: "md-button", "md-button md-button--primary"
-home_button2_icon: gear       # Options: "people", "gear", "image"
-home_button2_blurb: |         # Short description of this button / section.
-  按照 tags 查找页面
-
-# Homepage Code Execution
-# home_execute_js: | # Javascript to execute when accessing the homepage
-  # console.log("This is an example!");
-
 
 theme:
     icon:
@@ -43,42 +15,60 @@ theme:
     logo: assets/meta/favicon.svg
     favicon: assets/meta/favicon.svg
     custom_dir: overrides
-    font:
-        text: Roboto
-        code: Roboto Mono
     language: zh
-
-
-    palette:
-        # Light Mode
-        - media: "(prefers-color-scheme: light)"
-          scheme: default
-          primary: deep orange
-          accent: indigo
-          toggle:
-            icon: material/toggle-switch-off-outline
-            name: Switch to Dark Mode
-
-        # Dark Mode
-        - media: "(prefers-color-scheme: dark)"
-          scheme: slate
-          primary: deep purple
-          accent: indigo
-          toggle:
-            icon: material/toggle-switch
-            name: Switch to Light Mode
 
     features:
         - navigation.indexes
         - navigation.top
-        - navigation.footer           # Add 'previous' and 'next' buttons in the footer
+        # - navigation.footer           # Add 'previous' and 'next' buttons in the footer
         - navigation.tabs
         - navigation.tabs.sticky
         - navigation.expand
         - search.highlight
         - search.suggest              # Display likeliest completion for the last queried word
 
-# Extensions
+    palette: # 亮暗主题
+        # # Light Mode
+        # - media: "(prefers-color-scheme: light)"
+        #   scheme: default
+        #   primary: deep orange
+        #   accent: indigo
+        #   toggle:
+        #     icon: material/toggle-switch-off-outline
+        #     name: Switch to Dark Mode
+
+        # Dark Mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          primary: deep purple
+          accent: indigo
+          # toggle:
+          #   icon: material/toggle-switch
+          #   name: Switch to Light Mode
+
+# 满血版
+plugins:
+  - search
+  - meta-descriptions
+  - git-revision-date-localized:
+      type: datetime
+      fallback_to_build_date: true
+      locale: zh
+      time_zone: Asia/Shanghai
+      enable_creation_date: true
+  - ezlinks:
+        wikilinks: true
+  - awesome-pages
+  - embed_file:
+      callouts: true
+      custom-attributes: 'assets/css/custom_attributes.css'
+  - custom-attributes:
+      file: 'assets/css/custom_attributes.css'
+  - tags:
+      tags_file: tags.md
+  - callouts
+  - glightbox
+
 markdown_extensions:
   - footnotes
   - nl2br
@@ -104,8 +94,8 @@ markdown_extensions:
   - pymdownx.tasklist:
        custom_checkbox: true
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - admonition
   - toc:
       permalink: true
@@ -116,67 +106,56 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-plugins:
-  - search
-  - meta-descriptions
-  - git-revision-date-localized:
-      type: datetime
-      fallback_to_build_date: true
-      locale: zh
-      time_zone: Asia/Shanghai
-      enable_creation_date: true
-  - ezlinks:
-        wikilinks: true
-  - awesome-pages
-  - embed_file:
-      callouts: true
-      custom-attributes: 'assets/css/custom_attributes.css'
-  - custom-attributes:
-      file: 'assets/css/custom_attributes.css'
-  - tags:
-      tags_file: tags.md
-  - encryptcontent:
-      title_prefix: '🔐'
-      summary: 'Private page'
-      placeholder: 'Password'
-      decryption_failure_message: 'Invalid password'
-      encryption_info_message: "You don't have access to this page."
-      search_index: 'encrypted'
-      password_button: True
-      password_button_text: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 32h-64c-17.67 0-32 14.33-32 32s14.33 32 32 32h64c17.67 0 32 14.33 32 32v256c0 17.67-14.33 32-32 32h-64c-17.67 0-32 14.33-32 32s14.33 32 32 32h64c53.02 0 96-42.98 96-96V128C512 74.98 469 32 416 32zM342.6 233.4l-128-128c-12.51-12.51-32.76-12.49-45.25 0c-12.5 12.5-12.5 32.75 0 45.25L242.8 224H32C14.31 224 0 238.3 0 256s14.31 32 32 32h210.8l-73.38 73.38c-12.5 12.5-12.5 32.75 0 45.25s32.75 12.5 45.25 0l128-128C355.1 266.1 355.1 245.9 342.6 233.4z"/></svg>'
-  - callouts
-  - glightbox
-hooks:
-  - overrides/hooks/on_page_markdown.py
-  - overrides/hooks/on_env.py
-  - overrides/hooks/on_files.py
+
 extra_javascript:
-  - assets/js/config.js
-  - assets/js/javascript.js
   - https://polyfill.alicdn.com/v3/polyfill.min.js?features=es6
-  - https://cdn.staticfile.org/mathjax/3.2.2/es5/tex-mml-chtml.min.js
+  - assets/js/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
 extra_css:
-    - assets/css/all.min.css
-    - assets/css/styles.css
-    - assets/css/admonition.css
-    - assets/css/custom_attributes.css
-    - assets/css/customization.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
+  - assets/css/all.min.css
+  - assets/css/styles.css
+  - assets/css/admonition.css
+  - assets/css/custom_attributes.css
+  - assets/css/customization.css
+            
 extra:
   SEO: assets/meta/favicon.svg
-  comments: true
-  generate_graph: false #generate the graph of the site
-  attachments: 'assets/img' #path to the folder where the attachments are stored
-  no-auto-h1: false #disable the automatic generation of h1 if no h1 is found
-  blog_list:
-    pagination: true #enable pagination
-    pagination_message: true #display the message "Showing x posts out of y"
-    pagination_translation: 'posts in' #message to display before the number of posts ; Add your own translation!
-    no_page_found: "No pages found!" #message to display when no pages are found ; Add your own translation!
-  hooks:
-    strip_comments: false
-    fix_heading: false
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/hyj0824
-    - icon: fontawesome/solid/paper-plane
+    - icon: fontawesome/regular/envelope
       link: mailto:2417179808@qq.com
+    - icon: fontawesome/brands/steam
+      link: https://steamcommunity.com/profiles/76561199220461638/
+    - icon: fontawesome/brands/qq
+      link: https://qm.qq.com/q/hbtmNzuuGs
+
+
+# Custom Homepage Elements
+home_cover_image: assets/meta/head.webp # This path starts at your root mkdocs directory.
+home_tagline: hyj0824's Blog
+home_description: |
+  一枚SN的蒟蒻
+home_gradient_hsla: hsla(0deg,47%,55%,1) # Default Green: hsla(160deg,47%,55%,1)
+
+# Custom Homepage Button(s)
+# home_button1_name: View All                 # Comment this parameter out to remove the button.
+# home_button1_url: posts_list
+# home_button1_theme: md-button md-button--primary # Options: "md-button", "md-button md-button--primary"
+# home_button1_icon: image                        # Options: "people", "gear", "image"
+# home_button1_blurb: |                            # Short description of this button / section.
+#   查看文章列表
+
+# home_button2_name: Tags   # Comment this parameter out to remove the button.
+# home_button2_url: tags    # This path starts at your root mkdocs directory.
+# home_button2_theme: md-button # Options: "md-button", "md-button md-button--primary"
+# home_button2_icon: gear       # Options: "people", "gear", "image"
+# home_button2_blurb: |         # Short description of this button / section.
+#   按照 tags 查找页面
+
+# Homepage Code Execution
+# home_execute_js: | # Javascript to execute when accessing the homepage
+#   console.log("This is an example!");
