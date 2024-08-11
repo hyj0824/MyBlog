@@ -8,7 +8,6 @@ dg-publish: true
 dg-permalink: StringHash
 ---
 
-
 > 当然也不失为一种骗分技巧，特别是与字典序相关的问题，转化成 lcp。
 
 ## Intro

@@ -8,7 +8,6 @@ dg-publish: true
 dg-permalink: 动态DP
 ---
 
-
 ## 简述
 
 将普通的矩阵乘法中的乘变为加，加变为 $\max$ 操作。

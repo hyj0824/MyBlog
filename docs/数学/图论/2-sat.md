@@ -9,7 +9,6 @@ dg-publish: true
 dg-permalink: 2-sat
 ---
 
-
 前置知识：Tarjan 缩点，逻辑运算法则（且对或的分配率、摩根率）
 
 SAT 是适定性（Satisfiability）问题的简称。一般形式为 k - 适定性问题，简称 k-SAT。而当 k>2 时该问题为 NP 完全的。**只有2-SAT有多项式复杂度。**

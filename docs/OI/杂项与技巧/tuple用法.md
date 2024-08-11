@@ -6,7 +6,6 @@ dg-publish: true
 dg-permalink: tuple用法
 ---
 
-
 `std::get<_index_>(...)` 或 `std::get<_type_>(...)` 都是引用，可以直接修改、访问。
 
 ```cpp

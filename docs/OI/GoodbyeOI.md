@@ -6,7 +6,6 @@ dg-publish: true
 dg-permalink: GoodbyeOI
 ---
 
-
 终于退役了。把noip打成跟春测一样随机得分也是没谁了。经验教训啥的在后面，前面的碎碎念就跳过去吧。
 
 ## Before OI

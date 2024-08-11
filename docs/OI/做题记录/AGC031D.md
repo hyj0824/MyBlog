@@ -8,7 +8,6 @@ dg-publish: true
 dg-permalink: AGC031D
 ---
 
-
 > [!note] [[AGC031D] A Sequence of Permutations](https://www.luogu.com.cn/problem/AT_agc031_d)
 > 给定两个长为 $n$ 的排列 $p,q$，设 $f(p,q)$ 为第 $p_i$ 个数为 $q_i$ 的排列。已知 $a_1=p,a_2=q,a_{n+2}=f(a_n,a_{n+1})$。求 $a_k$.
 
