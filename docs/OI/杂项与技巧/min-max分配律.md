@@ -6,7 +6,6 @@ dg-publish: true
 dg-permalink: min-max分配律
 ---
 
-
 这是什么奇怪的分配率——对一个相同的数，min-max对其有分配律。
 
 $$
