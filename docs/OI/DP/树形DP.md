@@ -7,7 +7,6 @@ dg-publish: true
 dg-permalink: 树形DP
 ---
 
-
 > 树上DFS + DP，一般用 $f_{i,\cdots}$ 表示以 $i$ 为根的子树的状态。
 
 ## 树上dp
