@@ -7,7 +7,6 @@ dg-publish: true
 dg-permalink: exgcd
 ---
 
-
 **注：如果方程设成ax-by=0之类的，判断-b即可。详见本文。**
 
 ## Part 0 前言

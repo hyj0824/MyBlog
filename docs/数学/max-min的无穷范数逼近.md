@@ -6,7 +6,6 @@ dg-publish: true
 dg-permalink: max-min的无穷范数逼近
 ---
 
-
 [九省联考数学填空最后一题：max也能求导做\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV14T4y1b7vk/?spm_id_from=333.337.top_right_bar_window_history.content.click&vd_source=93b3dd257657feac9f39c1f13c3171e9)
 
 
