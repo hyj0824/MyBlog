@@ -1,5 +1,8 @@
 name: Deploy MkDocs To gh-pages
 
+env:
+  TZ: Asia/Shanghai
+
 on:
   push:
     branches:
@@ -17,11 +20,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3 # this action clones your repository
+        with:
+          fetch-depth: 0 # 默认为1,表示只拉去最新commit信息，会导致当前文件显示的创建时间、更新时间都为commit的时间
 
       - name: Set up Python
         uses: actions/setup-python@v4 # this action sets up a python environment
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Deploy
         uses: mhausenblas/mkdocs-deploy-gh-pages@master # this action builds and deploys your mkdocs site to GitHub Pages

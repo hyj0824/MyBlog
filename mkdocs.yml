@@ -1,6 +1,6 @@
-site_name: hyj0824's OI Blog
+site_name: hyj0824's Blog
 site_url: https://www.hyj.ac.cn/
-dev_addr: '0.0.0.0:8000' #默认值
+dev_addr: "0.0.0.0:8000" #默认值
 
 # 右上角项目地址
 repo_url: https://github.com/hyj0824/MyBlog
@@ -9,42 +9,46 @@ repo_name: hyj0824/MyBlog
 copyright: Copyleft hyj0824
 
 theme:
-    icon:
-        repo: fontawesome/brands/git-alt
-    name: 'material'
-    logo: assets/meta/favicon.svg
-    favicon: assets/meta/favicon.svg
-    custom_dir: overrides
-    language: zh
+  icon:
+    repo: fontawesome/brands/git-alt
+  name: "material"
+  logo: assets/meta/favicon.svg
+  favicon: assets/meta/favicon.svg
+  custom_dir: overrides
+  language: zh
+  font:
+    text: "LXGW WenKai Screen"
 
-    features:
-        - navigation.indexes
-        - navigation.top
-        # - navigation.footer           # Add 'previous' and 'next' buttons in the footer
-        - navigation.tabs
-        - navigation.tabs.sticky
-        - navigation.expand
-        - search.highlight
-        - search.suggest              # Display likeliest completion for the last queried word
+  features:
+    - navigation.indexes
+    - navigation.top
+    # - navigation.footer           # Add 'previous' and 'next' buttons in the footer
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
+    - search.highlight
+    - search.suggest # Display likeliest completion for the last queried word
+    - content.code.copy
+    - content.code.annotate
 
-    palette: # 亮暗主题
-        # # Light Mode
-        # - media: "(prefers-color-scheme: light)"
-        #   scheme: default
-        #   primary: deep orange
-        #   accent: indigo
-        #   toggle:
-        #     icon: material/toggle-switch-off-outline
-        #     name: Switch to Dark Mode
+  palette: # 亮暗主题
+    # # Light Mode
+    # - media: "(prefers-color-scheme: light)"
+    #   scheme: default
+    #   primary: deep orange
+    #   accent: indigo
+    #   toggle:
+    #     icon: material/toggle-switch-off-outline
+    #     name: Switch to Dark Mode
 
-        # Dark Mode
-        - media: "(prefers-color-scheme: dark)"
-          scheme: slate
-          primary: deep purple
-          accent: indigo
-          # toggle:
-          #   icon: material/toggle-switch
-          #   name: Switch to Light Mode
+    # Dark Mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: indigo
+      # toggle:
+      #   icon: material/toggle-switch
+      #   name: Switch to Light Mode
 
 # 满血版
 plugins:
@@ -57,13 +61,13 @@ plugins:
       time_zone: Asia/Shanghai
       enable_creation_date: true
   - ezlinks:
-        wikilinks: true
+      wikilinks: true
   - awesome-pages
   - embed_file:
       callouts: true
-      custom-attributes: 'assets/css/custom_attributes.css'
+      custom-attributes: "assets/css/custom_attributes.css"
   - custom-attributes:
-      file: 'assets/css/custom_attributes.css'
+      file: "assets/css/custom_attributes.css"
   - tags:
       tags_file: tags.md
   - callouts
@@ -72,7 +76,6 @@ plugins:
 markdown_extensions:
   - footnotes
   - nl2br
-  - attr_list
   - sane_lists
   - meta
   - smarty
@@ -88,11 +91,8 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
-  - pymdownx.highlight:
-      use_pygments: true
-      anchor_linenums: true
   - pymdownx.tasklist:
-       custom_checkbox: true
+      custom_checkbox: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -100,7 +100,9 @@ markdown_extensions:
   - toc:
       permalink: true
   - pymdownx.inlinehilite
+  - abbr
   - pymdownx.snippets
+  - attr_list # 给任意元素加属性 但是和superfences冲突不能给fence加属性
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -114,13 +116,10 @@ extra_javascript:
   - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
 extra_css:
+  - https://cdn.tonycrane.cc/lxgw/lxgwscreen.css # 注册 LXGW WenKai Screen
   - https://unpkg.com/katex@0/dist/katex.min.css
-  - assets/css/all.min.css
-  - assets/css/styles.css
-  - assets/css/admonition.css
   - assets/css/custom_attributes.css
-  - assets/css/customization.css
-            
+
 extra:
   SEO: assets/meta/favicon.svg
   social:
@@ -133,14 +132,12 @@ extra:
     - icon: fontawesome/brands/qq
       link: https://qm.qq.com/q/hbtmNzuuGs
 
-
 # Custom Homepage Elements
 home_cover_image: assets/meta/head.webp # This path starts at your root mkdocs directory.
 home_tagline: hyj0824's Blog
 home_description: |
   一枚SN的蒟蒻
 home_gradient_hsla: hsla(0deg,47%,55%,1) # Default Green: hsla(160deg,47%,55%,1)
-
 # Custom Homepage Button(s)
 # home_button1_name: View All                 # Comment this parameter out to remove the button.
 # home_button1_url: posts_list
