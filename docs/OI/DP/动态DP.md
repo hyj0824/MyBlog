@@ -35,7 +35,6 @@ $$
 \begin{aligned}
 ((AB)C){i,j} &= \bigoplus^{p}(AB){i,k}\otimes C \\
 &= \bigoplus_{k=1}^{p}\left( \left(\bigoplus_{t=1}^{q} A_{i,t}\otimes B_{t,k}\right) \otimes C_{k,j}\right) \\
-
 (A(BC)){i,j} &= \bigoplus^{q}A_{i,t}\otimes (BC){t,j} \\
 &= \bigoplus^{q} \left(A_{i,t}\otimes \left(\bigoplus_{k=1}^{p} B_{t,k} \otimes C_{k,j}\right)\right) \\
 \end{aligned}
