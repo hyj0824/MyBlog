@@ -4,8 +4,8 @@ tags:
   - 数学
   - 做题记录
 date: 2023-06-25
-dg-publish: true
-dg-permalink: AGC031D
+publish: true
+permalink: AGC031D
 ---
 
 > [!note] [[AGC031D] A Sequence of Permutations](https://www.luogu.com.cn/problem/AT_agc031_d)

@@ -1,10 +1,10 @@
 ---
 tags:
-  - 技巧
+  - 技巧总结
   - 搜索
 date: 2023-06-25
-dg-publish: true
-dg-permalink: DFS卡时
+publish: true
+permalink: DFS卡时
 ---
 
 

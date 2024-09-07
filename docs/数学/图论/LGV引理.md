@@ -3,8 +3,8 @@ tags:
   - 数学
   - 待完成
 date: 2023-06-29
-dg-publish: true
-dg-permalink: LGV引理
+publish: true
+permalink: LGV引理
 ---
 
 前置知识：

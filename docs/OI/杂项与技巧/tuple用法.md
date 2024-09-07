@@ -1,9 +1,9 @@
 ---
 tags:
-  - 杂项
+  - cpp
 date: 2023-10-23
-dg-publish: true
-dg-permalink: tuple用法
+publish: true
+permalink: tuple用法
 ---
 
 `std::get<_index_>(...)` 或 `std::get<_type_>(...)` 都是引用，可以直接修改、访问。

@@ -2,8 +2,8 @@
 tags:
   - 置换
 date: 2024-07-21
-dg-publish: true
-dg-permalink: Polya计数
+publish: true
+permalink: Polya计数
 ---
 
 无限制环染色问题：例如计算不同颜色的珠子串成的项链有多少种不同的排列方式，考虑到项链旋转对称性，这个问题就可以用置换群计数理论来解决。

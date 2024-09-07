@@ -4,8 +4,8 @@ tags:
   - DP
   - 树链剖分
 date: 2023-07-03
-dg-publish: true
-dg-permalink: 动态DP
+publish: true
+permalink: 动态DP
 ---
 
 ## 简述
