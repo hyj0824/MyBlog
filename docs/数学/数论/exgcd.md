@@ -3,8 +3,8 @@ tags:
   - 数论
   - 数学
 date: 2023-08-29
-dg-publish: true
-dg-permalink: exgcd
+publish: true
+permalink: exgcd
 ---
 
 **注：如果方程设成ax-by=0之类的，判断-b即可。详见本文。**
