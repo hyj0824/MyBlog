@@ -2,10 +2,10 @@
 tags:
   - 哈希
   - 字符串
-  - 技巧
+  - 技巧总结
 date: 2023-07-08
-dg-publish: true
-dg-permalink: StringHash
+publish: true
+permalink: StringHash
 ---
 
 > 当然也不失为一种骗分技巧，特别是与字典序相关的问题，转化成 lcp。
