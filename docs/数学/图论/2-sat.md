@@ -5,8 +5,8 @@ tags:
   - SCC
   - 图论
 date: 2023-06-27
-dg-publish: true
-dg-permalink: 2-sat
+publish: true
+permalink: 2-sat
 ---
 
 前置知识：Tarjan 缩点，逻辑运算法则（且对或的分配率、摩根率）
