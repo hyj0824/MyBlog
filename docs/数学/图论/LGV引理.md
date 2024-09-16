@@ -4,7 +4,6 @@ tags:
   - 待完成
 date: 2023-06-29
 publish: true
-permalink: LGV引理
 ---
 
 前置知识：
@@ -75,6 +74,6 @@ $$
 ---
 
 
-卡特兰数？？？的几个意义？ #待完成 
+卡特兰数？？？的几个意义？ #待完成
 
 ![[../../assets/img/Pasted image 20230629192537.png|Pasted image 20230629192537.png]]
