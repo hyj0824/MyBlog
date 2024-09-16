@@ -6,7 +6,6 @@ tags:
   - 图论
 date: 2023-06-27
 publish: true
-permalink: 2-sat
 ---
 
 前置知识：Tarjan 缩点，逻辑运算法则（且对或的分配率、摩根率）
@@ -36,7 +35,7 @@ SAT 是适定性（Satisfiability）问题的简称。一般形式为 k - 适定
 
 我们似乎隐隐感觉到要把每个变量（集合）拆成两个元素来解决问题。用图论尝试建模这个条件，将有向边看成「已知某个变量的取值，一定能够推出另一个变量的值」的推导关系。
 
-若设$x_1=F_1=false$，要满足条件，则$x_3$只能取$F_3=false$，连边 $F_1\rightarrow F_3$；  
+若设$x_1=F_1=false$，要满足条件，则$x_3$只能取$F_3=false$，连边 $F_1\rightarrow F_3$；
 同样设$x_3=T_3=true$，要满足条件，则$x_1$只能取$T_1=true$，连边 $T_3\rightarrow T_1$。
 
 而设$x_1=T_1=true$，满足条件时，$x_3$两个值都能取，是要连两条边吗？
@@ -63,7 +62,7 @@ using std::cin;
 using std::cout;
 using LL = long long;
 
-const int maxn = 4e6+10; //二倍点 四倍边 
+const int maxn = 4e6+10; //二倍点 四倍边
 
 // 2-sat
 
@@ -78,7 +77,7 @@ void addedge(int u,int v) {
 int dfn[maxn],low[maxn],st[maxn],top,id;
 bool in_st[maxn];
 int n,m;
-int scc_id,scc[maxn]; //记录染色 
+int scc_id,scc[maxn]; //记录染色
 
 void tarjan(int now) {
 	dfn[now]=low[now]=++id;
@@ -103,14 +102,14 @@ void tarjan(int now) {
 		scc[st[top]]=scc_id;
 		in_st[st[top]]=0;
 		top--;
-		// 弹出now 
+		// 弹出now
 	}
 }
 
 int main() {
 	cin >> n >> m;
 	for(int i=1; i<=m; i++) {
-		int a,b,va,vb; 
+		int a,b,va,vb;
 		cin >> a >> va >> b >> vb;
 		// 反向思考 一个条件不成立则另一个条件必须成立
 		// 真：1~n 假：n+1~2n
@@ -133,7 +132,7 @@ int main() {
 	for(int i=1; i<=2*n; i++) {
 		if(!dfn[i]) tarjan(i);
 	}
-	// 判断无解 自己和反点没有在一个scc（不取相同值） 
+	// 判断无解 自己和反点没有在一个scc（不取相同值）
 	for(int i=1;i<=n;i++){
 		if(scc[i]==scc[i+n]){
 			cout << "IMPOSSIBLE";

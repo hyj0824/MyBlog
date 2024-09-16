@@ -3,7 +3,6 @@ tags:
   - DP
 date: 2023-11-01
 publish: true
-permalink: DP导论
 ---
 # DP 导论
 

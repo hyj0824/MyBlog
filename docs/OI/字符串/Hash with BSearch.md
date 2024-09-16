@@ -5,7 +5,6 @@ tags:
   - 技巧总结
 date: 2023-07-08
 publish: true
-permalink: StringHash
 ---
 
 > 当然也不失为一种骗分技巧，特别是与字典序相关的问题，转化成 lcp。
@@ -71,14 +70,14 @@ void merge() {
 	int i=1,j=1,k=0;
 	while(k<n){
 		int l=0,r=n-j-i+2;
-		// r=n; // 爆了 
+		// r=n; // 爆了
 		if(a[i]==b[j]) {
 			while(l+1<r){
 				int mid=l+r>>1;
 				if(hash(i,i+mid,hasha) == hash(j,j+mid,hashb)) l=mid;
 				else r=mid;
 			}
-		} // 二分长度 
+		} // 二分长度
 		else r=0;
 		if(a[i+r]<b[j+r]) t[++k]=a[i++];
 		else t[++k]=b[j++];

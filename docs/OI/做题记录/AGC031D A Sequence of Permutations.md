@@ -5,7 +5,6 @@ tags:
   - 做题记录
 date: 2023-06-25
 publish: true
-permalink: AGC031D
 ---
 
 > [!note] [[AGC031D] A Sequence of Permutations](https://www.luogu.com.cn/problem/AT_agc031_d)
@@ -19,7 +18,7 @@ permalink: AGC031D
 
 
 $$
- P=\begin{pmatrix}1,2,\cdots,n\\ p_1,p_2,\cdots,p_n\end{pmatrix},Q=\begin{pmatrix}1,2,\cdots,n\\ q_1,q_2,\cdots,q_n\end{pmatrix} 
+ P=\begin{pmatrix}1,2,\cdots,n\\ p_1,p_2,\cdots,p_n\end{pmatrix},Q=\begin{pmatrix}1,2,\cdots,n\\ q_1,q_2,\cdots,q_n\end{pmatrix}
 $$
 
 
@@ -43,7 +42,7 @@ $$
 
 
 $$
- P=\begin{pmatrix}1,2,3,4\\ 3,1,4,2\end{pmatrix},Q=\begin{pmatrix}1,2,3,4\\ 4,3,1,2\end{pmatrix} 
+ P=\begin{pmatrix}1,2,3,4\\ 3,1,4,2\end{pmatrix},Q=\begin{pmatrix}1,2,3,4\\ 4,3,1,2\end{pmatrix}
 $$
 
 
@@ -102,7 +101,7 @@ struct Perm{
 	Perm(){
 		for(int i=1;i<=n;i++) a[i]=i;
 	}// 1,2,...,n
-	
+
 	// 复合运算 a*b = a(b())
 	Perm operator *(const Perm &b) const{
 		Perm ans;
@@ -114,7 +113,7 @@ struct Perm{
 	}
 }p,q;
 
-// 求逆 
+// 求逆
 Perm inv(const Perm &x){
 	Perm ans;
 	for(int i=1;i<=n;i++){
@@ -124,20 +123,20 @@ Perm inv(const Perm &x){
 }
 
 
-// 快速幂 求A和A的逆的幂 
+// 快速幂 求A和A的逆的幂
 Perm qpow(Perm x,int e){
 	Perm ans;
 	while(e){
 		if(e&1) ans=ans*x;
 		e>>=1,x=x*x;
 	}
-	return ans;	
+	return ans;
 }
 
 int main(){
 	cin >> n >> k;
 	for(int i=1;i<=n;i++)
-		cin >> p.a[i]; 
+		cin >> p.a[i];
 	for(int i=1;i<=n;i++)
 		cin >> q.a[i];
 	k--;
@@ -151,7 +150,7 @@ int main(){
 		case 5: ans=A*p*inv(q);break;
 	}
 	ans=qpow(A,k/6)*ans*qpow(inv(A),k/6);
-	for(int i=1;i<=n;i++) cout << ans.a[i] << ' ';	
+	for(int i=1;i<=n;i++) cout << ans.a[i] << ' ';
 	return 0;
 }
 ```

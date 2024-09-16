@@ -3,7 +3,6 @@ tags:
   - no-tag
 date: 2024-09-08
 publish: true
-permalink: 数据结构导论
 ---
 # 数据结构导论
 

@@ -4,7 +4,6 @@ tags:
   - 数学
 date: 2023-08-29
 publish: true
-permalink: exgcd
 ---
 
 **注：如果方程设成ax-by=0之类的，判断-b即可。详见本文。**
@@ -143,7 +142,7 @@ $\begin{cases} x'=nx=n*(x_0+k*b/gcd) \\ y'=ny=n*(y_0-k*a/gcd) \end{cases}$
 
 $$
 \begin{cases}
-x'=nx_0+kn*b/gcd \rightarrow nx_0+q*b/gcd \\ 
+x'=nx_0+kn*b/gcd \rightarrow nx_0+q*b/gcd \\
 y'=ny_0-kn*a/gcd \rightarrow ny_0-q*a/gcd  \\
 \end{cases}
 $$

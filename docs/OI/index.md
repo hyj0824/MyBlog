@@ -3,7 +3,6 @@ tags:
   - 随笔
 date: 2023-11-18
 publish: true
-permalink: GoodbyeOI
 ---
 # GoodbyeOI
 
