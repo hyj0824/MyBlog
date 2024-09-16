@@ -1,6 +1,5 @@
 ---
 template: home.html
-dg-home: true
 publish: true
 ---
 ### Hi there 👋
