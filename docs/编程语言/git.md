@@ -6,11 +6,13 @@ publish: true
 ---
 # git
 
+推荐使用 [Sourcetree | Free Git GUI for Mac and Windows](https://www.sourcetreeapp.com/)
+
 经典三段式，add告诉git对哪些文件的变动进行记录（create/delete/modify）兼有暂存文件修改的作用，commit就是创建备份点，push就不多说，修改已经push了的commit加-f。
 
 最为常用：
 
-checkout[[../../58561_Git从入门到精通_高见龙#^e438n025p6k|这个命令会把暂存区（Staging Area）中的内容或文件拿来覆盖工作目录中（Working Directory）的内容或文件。]]当然用restore会更直观。
+checkout[[../../58561_Git从入门到精通_高见龙#^e438n025p6k|这个命令会把暂存区（Staging Area）中的内容或文件拿来覆盖工作目录中（Working Directory）的内容或文件。]]
 
 ```bash
 git checkout test
@@ -38,22 +40,39 @@ git merge test new
 # 解决冲突
 git commit -a
 
-# 2.rebase 把分支到某一个commit上
+# 2.rebase 把从lca开始的修改叠加到某一个commit上
 git rebase test
 # 解决冲突
 git add .
 git rebase --continue
 ```
 
+## Rebase
 
-`rebase -i` 强大无需多言！！！改变历史！！！改天改地！！！它允许你以交互式的方式修改提交历史。当你在进行变基操作时，Git 会提示你一系列的操作选项，其中 `squash`、`reword`、`pick` 是最常见的几种：
+合并可以用 `git rebase <base commit>`，不仅仅可以合并分支，还可以合并commit。这个过程涉及到以下几个步骤：
 
-1. **pick**：这是默认操作，它会按照原来的顺序将lca链上的提交依次重新应用到基分支上。
-2. **reword**：如果你想要修改某个提交的信息（即提交消息），你可以将该提交行的 `pick` 改为 `reword`。这会在应用该提交之前暂停变基过程，允许你编辑提交消息。
-3. **squash**：这个选项用于将一个提交合并到前一个提交中。如果你有两个提交并且想要将它们合并为一个，你可以将第二个提交行的 `pick` 改为 `squash`。这会导致这两个提交被合并，并且你会有机会为合并后的提交提供一个统一的提交消息。**作为base的commit不能写squash！**
-4. **edit**：这个选项允许你对某个提交进行修改，比如添加新的更改或修复错误。这会暂停变基过程，允许你进行所需的更改，然后继续变基。[[../../58561_Git从入门到精通_高见龙#^gnfh37yab8c|Commit的文件太多了，可能会想把它拆解得更细。]] 用edit暂停，reset到HEAD^，一个一个add+commit。
-5. **drop**：这个选项用于删除某个提交。如果你不再需要某个提交，可以将其行的 `pick` 改为 `drop`。
-6. **exec**：这个选项允许你在变基过程中执行一个外部命令。这可以用来运行测试、构建项目或其他脚本。
+1. **确定公共祖先**：当前commit与base commit的lca。
+2. **取出更改**：取出当前commit从公共祖先开始的所有提交。
+3. **应用更改**：将这些提交更改依次接续到base commit后方。
+
+在 `rebase` 过程中，如果出现冲突，Git 会停止并允许你手动解决这些冲突。解决冲突后，你需要使用 `git add` 将更改加入暂存区，然后使用 `git rebase --continue` 命令继续 `rebase` 过程。
+
+`rebase` 操作的好处是可以将项目的历史变得更加清晰，因为它避免了不必要的合并提交，使得项目的历史看起来像是一条直线。这对于查看项目的历史和维护项目非常有用。
+
+更精细化的修改需要使用 `git rebase -i` 的交互式操作，它允许你指定从公共祖先开始的每个提交分别采取怎样的操作：
+
+1. **pick**：这是默认操作，即按照原来的顺序将lca链上的提交依次应用到base commit后方。
+2. **reword**：修改某个提交的消息，这会在应用该提交之前暂停变基过程，允许你编辑提交消息。
+3. **squash**：将提交合并到前一个提交中，并让你给合并后的提交提供一个新的提交消息。
+4. **fixup**：将提交合并到前一个提交中，沿用前一个提交的消息。
+5. **edit**：对某个提交进行修改、添加新的commit或修复错误。这会暂停变基过程，允许你进行所需的更改，然后继续变基。（例子：[[../../58561_Git从入门到精通_高见龙#^gnfh37yab8c|Commit的文件太多了，可能会想把它拆解得更细。]] 用edit暂停，reset到HEAD^，一个一个add+commit）
+6. **drop**：这个选项用于删除某个提交。如果你不再需要某个提交，可以将其行的 `pick` 改为 `drop`。
+
+**squash和fixup不能用在rebase -i列表的首个commit，因为它前面就是要保留的base commit，无法与之合并成新commit**
+
+## 其他
+
+git只认文件，空目录需要使用文件.keep/.gitkeep占位。
 
 ```shell
 # commit图
@@ -78,9 +97,14 @@ git push origin :new
 
 # cherry-pick 仅拉取特定的commit内容，而不是从lca开始的全部commit
 git cherry-pick "sha1" "sha2"
+
+# 立刻 gc
+git fsck --unreachable
+git reflog expire --all --expire=now
+git gc --prune=now 
 ```
 
-git只认文件，空目录需要使用文件.keep/.gitkeep占位。
+
 
 ## HEAD
 
@@ -114,6 +138,23 @@ to do so with:
  git branch <new-branch-name> c599bef
 
 Switched to branch 'master'
+
+PS C:\Users\24171\Documents\GitHub\Playground> git checkout 41cb26f
+Note: switching to '41cb26f'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
 ```
 
 
@@ -143,13 +184,5 @@ target/  # 表示过滤这个文件夹下的所有文件
 [[../../58561_Git从入门到精通_高见龙#^a1yg1i7urq4|Git根据这串信息，把原本放在.git/objects中以SHA-1计算命名的目录及文件，一个一个地复原成原来的样子，]]
 
 [[../../58561_Git从入门到精通_高见龙#^b5kktkanngd|其实，Git并不是很在意空间的浪费，能够快速、有效率地操作才是Git关注的重点。]]
-
-[[../../58561_Git从入门到精通_高见龙#^o3ed112lpx|Rebase的过程大概是这样的]] Rebase找lca，从lca一层一层重做commit到目标的commit(base)上，遇到冲突就会停下来等，此时你有以下几个选项：
-
-1. **--continue**：这个选项用于在解决冲突或完成某些编辑后继续 rebase 过程。当你解决了所有冲突并测试了代码之后，你可以使用 `git rebase --continue` 来继续应用剩余的提交。
-2. **--skip**：如果你遇到了一个无法解决的冲突，或者你决定不应用某个特定的提交，可以使用 `git rebase --skip` 来跳过当前的提交并继续 rebase 过程。
-3. **--abort**：这个选项用于完全停止 rebase 过程，并放弃所有已经进行的更改，将 HEAD 重置回 rebase 开始之前的状态。如果提供了 `<branch>`，则 HEAD 会重置到 `<branch>`。否则 HEAD 会重置到 rebase 操作开始时的位置。
-4. **--quit**：这个选项用于退出 rebase 会话，但是不重置 HEAD 回原始分支。索引和工作树也会保持不变。如果使用了 `--autostash` 创建了临时 stash，它会保存到 stash 列表中。
-5. **--edit-todo**：这个选项允许你在交互式 rebase 中编辑待处理的提交列表。这可以用来改变提交的顺序、修改提交信息、合并提交等。
 
 空的目录无法被add检测，因为git add只关心文件内容生成blob对象，git commit后才组织tree对象形成目录。[[../../58561_Git从入门到精通_高见龙#^oxy7q8yy9x|在空目录中随便放一个文件就行了。如果当前还没有文件可以放，或者不知道该放什么文件，通常可以放一个名为“.keep”或“.gitkeep”的空文件，让Git能“感应”到这个目录的存在]]
