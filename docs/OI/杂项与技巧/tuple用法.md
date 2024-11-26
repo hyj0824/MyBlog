@@ -28,7 +28,7 @@ A：值传递可以直接使用 `std::tie()`。引用传递做不到，但是有
 int a; char b;
 auto p = std::make_tuple(std::ref(a),std::ref(b)) = fu;
 // 本质创建了一个std::tuple<ref_wrapper,ref_wrapper>引用a,b两个变量
-// 因此 cout << std::get<0>(p) << std::get<char>(p); 会报错
+// 因此 cout << std::get<char>(p); 会报错
 a++,b++;
 cout << std::get<0>(p) << std::get<1>(p);
 ```
@@ -38,7 +38,7 @@ cout << std::get<0>(p) << std::get<1>(p);
 ```cpp
 int a; char b;
 auto p = std::tie(a,b) = fu;
-// cout << std::get<0>(p) << std::get<char>(p); 也会报错
+// cout << std::get<char>(p); 也会报错
 a++,b++;
 cout << std::get<0>(p) << std::get<1>(p);
 ```
