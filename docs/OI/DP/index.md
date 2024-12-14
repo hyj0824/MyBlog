@@ -14,10 +14,10 @@ publish: true
 
 ## 常见模型
 
-[[OI/DP/背包|OI/DP/背包]]
+[背包](./%E8%83%8C%E5%8C%85.md)
 
-[[OI/DP/动态DP|动态DP]]
+[动态DP](./%E5%8A%A8%E6%80%81DP.md)
 
-[[OI/DP/树形DP|OI/DP/树形DP]]
+[树形DP](./%E6%A0%91%E5%BD%A2DP.md)
 
-[[OI/DP/优化DP|OI/DP/优化DP]]
+[优化DP](./%E4%BC%98%E5%8C%96DP.md)
