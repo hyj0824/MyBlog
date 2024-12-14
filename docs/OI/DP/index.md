@@ -16,7 +16,7 @@ publish: true
 
 [[OI/DP/背包|OI/DP/背包]]
 
-[[动态DP|动态DP]]
+[[OI/DP/动态DP|动态DP]]
 
 [[OI/DP/树形DP|OI/DP/树形DP]]
 
