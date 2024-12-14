@@ -12,6 +12,7 @@ publish: true
 clash-verge-rev、webdav恢复配置
 powertoys
 windows-terminal
+vscode（git默认最为舒适）
 scoop导入，管理便携版，方便config
 winget等其他方式补充，随用随配置
 windowspowershell + busybox
@@ -35,13 +36,13 @@ ssh hyj0824@192.168.1.17
 
 ### 准备工作
 
-使用 Windows [PowerShell](https://cn.a-d.site/?cat=powershell) 5.0 或 5.1 更新 PSReadLine 通常有两个步骤。首先，您需要确保您运行的是 `1.6.0` 或更高版本的 PowerShellGet。为此，您需要在提升的 Windows [PowerShell](https://cn.a-d.site/?cat=powershell) 会话中运行以下命令。
+使用 Windows PowerShell 5.0 或 5.1 更新 PSReadLine 通常有两个步骤。首先，您需要确保您运行的是 `1.6.0` 或更高版本的 PowerShellGet。为此，您需要在提升的 Windows PowerShell 会话中运行以下命令。
 
 ```powershell
 Install-Module -Name PowerShellGet -Force
 ```
 
-接下来，确保关闭所有 [PowerShell](https://cn.a-d.site/?cat=powershell) 会话，并在提升的 `cmd.exe` 提示符下运行以下代码。这是从 `cmd.exe` 运行的原因是，默认情况下，PSReadLine 已加载，如果在内存中则无法更新。
+接下来，确保关闭所有 PowerShell 会话，并在提升的 `cmd.exe` 提示符下运行以下代码。这是从 `cmd.exe` 运行的原因是，默认情况下，PSReadLine 已加载，如果在内存中则无法更新。
 
 ```powershell
 powershell -noprofile -command "Install-Module PSReadLine -Force -SkipPublisherCheck -AllowPrerelease"

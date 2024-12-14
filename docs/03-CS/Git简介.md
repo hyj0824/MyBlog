@@ -43,7 +43,7 @@ git checkout <commit> <path>
 
 ### checkout
 
-[[../assets/img/58561_Git从入门到精通_高见龙.pdf#page=72&selection=63,6,73,16|当使用git checkout命令时，Git会切换到指定的分支，但如果后面接的是文件名或路径，Git则不会切换分支，而是把文件从.git目录中复制一份覆盖到当前的工作目录。]]与reset --mixed相反，它不会修改暂存区，只会修改工作区。
+[[58561_Git从入门到精通_高见龙.pdf#page=72&selection=63,6,73,16|当使用git checkout命令时，Git会切换到指定的分支，但如果后面接的是文件名或路径，Git则不会切换分支，而是把文件从.git目录中复制一份覆盖到当前的工作目录。]]与reset --mixed相反，它不会修改暂存区，只会修改工作区。
 
 ```bash
 # 移动HEAD
@@ -140,7 +140,7 @@ git config -l --global
 
 合并可以用 `git rebase <base commit>`，不仅仅可以合并分支，还可以合并commit。
 
-> [!note] [[../assets/img/58561_Git从入门到精通_高见龙.pdf#page=152&selection=16,8,18,9|Rebase的过程大概是这样的]]
+> [!note] [[58561_Git从入门到精通_高见龙.pdf#page=152&selection=16,8,18,9|Rebase的过程大概是这样的]]
 > 1. **确定公共祖先**：当前commit与base commit的lca。
 > 2. **取出更改**：取出当前commit从公共祖先开始的所有提交。
 > 3. **应用更改**：将这些提交更改依次接续到base commit后方。
@@ -158,14 +158,14 @@ git config -l --global
 5. **edit**：对某个提交进行修改、添加新的commit或修复错误。这会暂停变基过程，允许你进行所需的更改，然后继续变基。
 6. **drop**：这个选项用于删除某个提交。如果你不再需要某个提交，可以将其行的 `pick` 改为 `drop`。
 
-> [!note] [[../assets/img/58561_Git从入门到精通_高见龙.pdf#page=185&selection=87,16,89,19|单次Commit的文件太多了，可能会想把它拆解得更细]]
+> [!note] [[58561_Git从入门到精通_高见龙.pdf#page=185&selection=87,16,89,19|单次Commit的文件太多了，可能会想把它拆解得更细]]
 > 用edit暂停，reset到HEAD^，一个一个add+commit。
 
 **squash和fixup不能用在rebase -i列表的首个commit，因为它前面就是要保留的base commit，无法与之合并成新commit**
 
 ## HEAD
 
-[[../assets/img/58561_Git从入门到精通_高见龙.pdf#page=77&selection=91,0,96,4|HEAD是一个指标，指向某一个分支，通常可以把它当作“当前所在分支”来看待。]]（如：refs/heads/master）。分支也是个指针，指向分支上最新的commit。例如：HEAD -> refs/heads/master -> b431fa7
+[[58561_Git从入门到精通_高见龙.pdf#page=77&selection=91,0,96,4|HEAD是一个指标，指向某一个分支，通常可以把它当作“当前所在分支”来看待。]]（如：refs/heads/master）。分支也是个指针，指向分支上最新的commit。例如：HEAD -> refs/heads/master -> b431fa7
 
 HEAD如果没有指向本地的分支，则称之为detached head（断头HEAD）。可能发生这个状态的原因有：
 
@@ -245,22 +245,22 @@ target/  # 表示过滤这个文件夹下的所有文件
 
 ## Fun Facts
 
-> [!note] [[../assets/img/58561_Git从入门到精通_高见龙.pdf#page=61&selection=23,14,37,8|在空目录中随便放一个文件就行了。如果当前还没有文件可以放，或者不知道该放什么文件，通常可以放一个名为“.keep”或“.gitkeep”的空文件，让Git能“感应”到这个目录的存在]]
+> [!note] [[58561_Git从入门到精通_高见龙.pdf#page=61&selection=23,14,37,8|在空目录中随便放一个文件就行了。如果当前还没有文件可以放，或者不知道该放什么文件，通常可以放一个名为“.keep”或“.gitkeep”的空文件，让Git能“感应”到这个目录的存在]]
 > 空的目录无法被add检测，因为git add只关心文件内容生成blob对象，git commit后才组织tree对象形成目录。
 
-> [!note] [[../assets/img/58561_Git从入门到精通_高见龙.pdf#page=110&selection=99,0,103,6|其实，Git并不是很在意空间的浪费，能够快速、有效率地操作才是Git关注的重点。]]
+> [!note] [[58561_Git从入门到精通_高见龙.pdf#page=110&selection=99,0,103,6|其实，Git并不是很在意空间的浪费，能够快速、有效率地操作才是Git关注的重点。]]
 > 基本上commit时优先记录整个文件，而不是差异。
 
-> [!note] [[../assets/img/58561_Git从入门到精通_高见龙.pdf#page=106&selection=0,3,7,5|Git根据这串信息，把原本放在.git/objects中以SHA-1计算命名的目录及文件，一个一个地复原成原来的样子]]
+> [!note] [[58561_Git从入门到精通_高见龙.pdf#page=106&selection=0,3,7,5|Git根据这串信息，把原本放在.git/objects中以SHA-1计算命名的目录及文件，一个一个地复原成原来的样子]]
 > 跟主席树一样，死去的oi又开始攻击我。
 
-> [!note] [[../assets/img/58561_Git从入门到精通_高见龙.pdf#page=66&selection=32,10,38,6|想要知道某个文件的某一行代码是谁写的吗？在Git中可使用git blame命令帮你找出来]]
+> [!note] [[58561_Git从入门到精通_高见龙.pdf#page=66&selection=32,10,38,6|想要知道某个文件的某一行代码是谁写的吗？在Git中可使用git blame命令帮你找出来]]
 
-> [!note] [[../assets/img/58561_Git从入门到精通_高见龙.pdf#page=260&selection=51,0,53,19|就像是推送空的内容去更新在线的cat分支的内容，也算是变相地把该分支删除。]]
+> [!note] [[58561_Git从入门到精通_高见龙.pdf#page=260&selection=51,0,53,19|就像是推送空的内容去更新在线的cat分支的内容，也算是变相地把该分支删除。]]
 > ```bash
 > git push origin :cat
 > git push origin master:cat
 > ```
 > A:B means push A as B
 
-[[../assets/img/58561_Git从入门到精通_高见龙.pdf#page=56&selection=25,0,46,3|Git是根据文件的“内容”来计算SHA-1的值，所以文件的名称不重要，重要的是文件的内容。当更改文件名时，Git并不会为此做出一个新的Blob对象，而只是指向原来的那个Blob对象。但因为文件名变了，所以Git会为此做出一个新的Tree对象。]]
+[[58561_Git从入门到精通_高见龙.pdf#page=56&selection=25,0,46,3|Git是根据文件的“内容”来计算SHA-1的值，所以文件的名称不重要，重要的是文件的内容。当更改文件名时，Git并不会为此做出一个新的Blob对象，而只是指向原来的那个Blob对象。但因为文件名变了，所以Git会为此做出一个新的Tree对象。]]
