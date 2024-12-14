@@ -32,13 +32,13 @@ https://www.luogu.com.cn/problem/P7736
 
 二元，只有两种情况，要么一对一，二对二；要么打交叉。我们考虑打交叉的路径二元组 $P(a_1,b_2),P(a_2,b_1)$，不难发现，在交点处，如果把剩下的路径交换，则变为了 $P(a_1,b_1),P(a_2,b_2)$ 中路径相交的方案。
 
-![[../../assets/img/Pasted image 20230629195206.webp|../../assets/img/Pasted image 20230629195206.webp]]
+![[Pasted image 20230629195206.webp|Pasted image 20230629195206.webp]]
 
 可以证明，这样的对应关系是双射。那么所有一对一，二对二的方案数减去打交叉的方案数，就是所有不相交路径的方案数。
 
 更复杂一点的情况，更多交点也类似。
 
-![[../../assets/img/Pasted image 20230629200443.webp|../../assets/img/Pasted image 20230629200443.webp]]
+![[Pasted image 20230629200443.webp|Pasted image 20230629200443.webp]]
 
 多元，设起点为编号$1\cdots n$，则终点编号为$[1,n]$的一个排列，路径相交和该排列的逆序对个数有关，偶数个逆序对加，奇数个逆序对减。
 
@@ -75,4 +75,4 @@ $$
 
 卡特兰数？？？的几个意义？ #待完成
 
-![[../../assets/img/Pasted image 20230629192537.webp|../../assets/img/Pasted image 20230629192537.webp]]
+![[Pasted image 20230629192537.webp|Pasted image 20230629192537.webp]]
