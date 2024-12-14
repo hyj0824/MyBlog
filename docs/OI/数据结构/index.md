@@ -6,4 +6,4 @@ publish: true
 ---
 # 数据结构导论
 
-[安全访问中心 - 洛谷](https://www.luogu.com.cn/blog/command-block/yi-suo-chang-yong-di-shuo-ju-jie-gou-wei-hu-shou-fa)
+[一些常用的数据结构维护手法 - 洛谷专栏](https://www.luogu.com/article/kuvsl99s)
