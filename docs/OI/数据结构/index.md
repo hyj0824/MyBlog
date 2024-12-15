@@ -1,9 +1,9 @@
 ---
 tags:
-  - 数据结构
+  - no-tag
 date: 2024-09-08
 publish: true
 ---
 # 数据结构导论
 
-[一些常用的数据结构维护手法 - 洛谷专栏](https://www.luogu.com/article/kuvsl99s)
+[安全访问中心 - 洛谷](https://www.luogu.com.cn/blog/command-block/yi-suo-chang-yong-di-shuo-ju-jie-gou-wei-hu-shou-fa)
