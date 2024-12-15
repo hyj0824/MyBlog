@@ -3,11 +3,7 @@ title: Configuration
 ---
 
 - [Obsidian Plugin](https://github.com/ObsidianPublisher/obsidian-github-publisher)
-- Template :
-  - To use with [Github Pages](https://github.com/ObsidianPublisher/template-gh-pages)
-  - With [Netlify](https://github.com/ObsidianPublisher/template-netlify-vercel)
-- [Documentation](https://obsidian-publisher.netlify.app/)
-- [Github Discussion](https://github.com/ObsidianPublisher/obsidian-github-publisher/discussions)
+
 
 ## Mkdocs configuration
 

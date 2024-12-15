@@ -1,6 +1,6 @@
 site_name: hyj0824's Blog
 site_url: https://www.hyj.ac.cn/
-dev_addr: "0.0.0.0:8000" #默认值
+dev_addr: "0.0.0.0:8000"
 
 # 右上角项目地址
 repo_url: https://github.com/hyj0824/MyBlog
@@ -60,8 +60,7 @@ plugins:
       locale: zh
       time_zone: Asia/Shanghai
       enable_creation_date: true
-  - ezlinks:
-      wikilinks: true
+  - ezlinks
   - awesome-pages
   - embed_file:
       callouts: true
