@@ -22,9 +22,9 @@ windowspowershell + busybox
 修改快捷键，新终端为 ctrl-shift-n，关闭为 ctrl-w。
 ### 自定义profile
 
-![[../assets/img/Pasted image 20241124173902.png|../assets/img/Pasted image 20241124173902.png]]
+![Pasted image 20241124173902.png](../assets/img/Pasted%20image%2020241124173902.png)
 
-![[../assets/img/Pasted image 20241124174918.png|../assets/img/Pasted image 20241124174918.png]]
+![Pasted image 20241124174918.png](../assets/img/Pasted%20image%2020241124174918.png)
 
 只要是在命令行中运行产生新shell的命令，就都可以写一个profile。填在命令行那块儿。例如mingw、cygwin、conda、ssh、docker run等等。可以当成一个xshell！
 
