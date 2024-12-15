@@ -1,6 +1,7 @@
 ---
 tags:
   - 数论
+  - 数学
 date: 2023-08-29
 publish: true
 ---
