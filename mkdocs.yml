@@ -20,6 +20,7 @@ theme:
     text: "LXGW WenKai Screen"
 
   features:
+    - navigation.instant
     - navigation.indexes
     - navigation.top
     # - navigation.footer           # Add 'previous' and 'next' buttons in the footer
@@ -73,40 +74,40 @@ plugins:
   - glightbox
 
 markdown_extensions:
-  - footnotes
-  - nl2br
-  - sane_lists
-  - meta
-  - smarty
-  - tables
-  - mdx_breakless_lists
-  - def_list
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.details
-  - pymdownx.magiclink
-  - pymdownx.critic
-  - pymdownx.caret
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - admonition
+  - def_list
+  - footnotes
+  - meta
   - toc:
       permalink: true
+      slugify: !!python/name:pymdownx.slugs.uslugify
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.highlight:
+      linenums: true
   - pymdownx.inlinehilite
-  - abbr
-  - pymdownx.snippets
-  - attr_list # 给任意元素加属性 但是和superfences冲突不能给fence加属性
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.progressbar
+  - pymdownx.smartsymbols
   - pymdownx.superfences:
       custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: math
+          class: arithmatex
+          format: !!python/name:pymdownx.arithmatex.fence_mathjax_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.tabbed:
+      alternate_style: true
 
 extra_javascript:
   - https://polyfill.alicdn.com/v3/polyfill.min.js?features=es6
