@@ -1,6 +1,7 @@
 ---
 tags:
   - 置换
+  - 数学
   - 做题记录
 date: 2023-06-25
 publish: true
