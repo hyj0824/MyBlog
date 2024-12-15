@@ -7,6 +7,7 @@ publish: true
 # Git简介
 
 推荐使用：
+
 - [Sourcetree | Free Git GUI for Mac and Windows](https://www.sourcetreeapp.com/)
 - [Visualizing Git](https://git-school.github.io/visualizing-git/)
 

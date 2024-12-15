@@ -74,6 +74,7 @@ plugins:
   - glightbox
 
 markdown_extensions:
+  - nl2br
   - admonition
   - def_list
   - footnotes
