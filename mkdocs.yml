@@ -63,11 +63,6 @@ plugins:
       enable_creation_date: true
   - ezlinks
   - awesome-pages
-  - embed_file:
-      callouts: true
-      custom-attributes: "assets/css/custom_attributes.css"
-  - custom-attributes:
-      file: "assets/css/custom_attributes.css"
   - tags:
       tags_file: tags.md
   - callouts
