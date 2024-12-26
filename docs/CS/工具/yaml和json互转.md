@@ -4,7 +4,6 @@ tags:
 date: 2024-12-01
 publish: true
 ---
-# yaml和json互转
 
 YAML和JSON互转可以通过编程实现，这里提供一些基本的代码示例，帮助你理解如何进行转换。
 
