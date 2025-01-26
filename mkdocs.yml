@@ -16,8 +16,6 @@ theme:
   favicon: assets/meta/favicon.svg
   custom_dir: overrides
   language: zh
-  font:
-    text: "LXGW WenKai Screen"
 
   features:
     - navigation.instant
@@ -112,9 +110,9 @@ extra_javascript:
   - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
 extra_css:
-  - https://cdn.tonycrane.cc/lxgw/lxgwscreen.css # 注册 LXGW WenKai Screen
+  - assets/css/fonts.css
+  - assets/css/extra.css
   - https://unpkg.com/katex@0/dist/katex.min.css
-  - assets/css/custom_attributes.css
 
 extra:
   SEO: assets/meta/favicon.svg
