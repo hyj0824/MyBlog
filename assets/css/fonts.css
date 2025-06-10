@@ -1,0 +1,10 @@
+/* 定义注册、导入字体；也可以在 extra_css 引入别人的 fonts.css 来注册 */
+
+/* LXGW WenKai Screen */
+@import url("https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css");
+/* Noto Sans SC */
+@import url('https://fonts.loli.net/css2?family=Noto Sans SC&display=swap');
+/* 思源宋体 */
+@import url('https://fonts.googleapis.com/css2?family=Noto Serif SC&display=swap');
+/* Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
